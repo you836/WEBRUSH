@@ -3,15 +3,15 @@ import { ModelViewer } from '@/components/ui/ModelViewer';
 export function AnimatedBackground() {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none" aria-hidden="true">
-      {/* 3D High-Performance Classroom Background */}
-      <div className="absolute inset-0 w-full h-full opacity-100 pointer-events-none">
+      {/* 3D Classroom Background */}
+      <div className="absolute inset-0 w-full h-full opacity-90 pointer-events-none">
         <ModelViewer
           url="/models/classroom.glb"
           height="100vh"
           width="100vw"
           targetScale={4.4}
           defaultZoom={2.4}
-          modelYOffset={-0.22}
+          modelYOffset={-0.20}
           defaultRotationX={12}
           defaultRotationY={-22}
           hideCeiling={true}
@@ -29,9 +29,9 @@ export function AnimatedBackground() {
         />
       </div>
 
-      {/* GPU-Friendly Aesthetic Dark Overlay (Smooth 60 FPS without GPU readback lag) */}
-      <div className="absolute inset-0 bg-[#0a0806]/35 pointer-events-none" />
-      <div className="absolute inset-0 bg-radial from-transparent via-[#0a0806]/15 to-[#0a0806]/60 pointer-events-none" />
+      {/* Blurry Black Background Overlay */}
+      <div className="absolute inset-0 bg-[#0a0806]/60 backdrop-blur-[8px] pointer-events-none" />
+      <div className="absolute inset-0 bg-radial from-transparent via-[#0a0806]/40 to-[#0a0806]/85 pointer-events-none" />
     </div>
   );
 }
