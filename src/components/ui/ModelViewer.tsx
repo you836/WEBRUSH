@@ -159,8 +159,8 @@ const ModelInner = ({
           o.visible = false;
         }
 
-        // Hide obstructing exterior walls so interior is always 100% visible
-        if (hideObstructingWalls && (name.includes('wall.004') || name.includes('wall.001') || name.includes('wall.002'))) {
+        // Hide only the front camera-facing entry wall so interior is 100% open
+        if (hideObstructingWalls && name.includes('wall.004')) {
           o.visible = false;
         }
       }
