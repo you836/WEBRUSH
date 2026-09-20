@@ -149,13 +149,18 @@ const ModelInner = ({
         }
 
         const name = (o.name || '').toLowerCase();
-        // Hide ceiling to open up the room
+        // Hide godrays that appear as dark/opaque blocks
+        if (name.includes('godray')) {
+          o.visible = false;
+        }
+
+        // Hide ceiling to open up the room interior
         if (hideCeiling && (name.includes('ceilling') || name.includes('ceiling') || name.includes('roof'))) {
           o.visible = false;
         }
 
-        // Hide front obstructing exterior wall if requested so interior is always 100% visible
-        if (hideObstructingWalls && (name.includes('wall.004') || name.includes('wall.001'))) {
+        // Hide obstructing exterior walls so interior is always 100% visible
+        if (hideObstructingWalls && (name.includes('wall.004') || name.includes('wall.001') || name.includes('wall.002'))) {
           o.visible = false;
         }
       }
