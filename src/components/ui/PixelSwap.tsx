@@ -1,4 +1,4 @@
-﻿import React, { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type CSSProperties } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type CSSProperties } from 'react';
 import './PixelSwap.css';
 
 // Every pixel is a window onto its own copy of the incoming content, so the
@@ -249,11 +249,13 @@ export function PixelSwap({
     [box.width, box.height, pixelSize, gap, pattern, randomness]
   );
 
-  const config = { duration, pixelDuration, pixelSpin, pixelScale, pixelRadius, fade, easing, onComplete };
+  const config = useMemo(() => ({ duration, pixelDuration, pixelSpin, pixelScale, pixelRadius, fade, easing, onComplete }), [duration, pixelDuration, pixelSpin, pixelScale, pixelRadius, fade, easing, onComplete]);
   const configRef = useRef(config);
   const gridRef = useRef(grid);
-  configRef.current = config;
-  gridRef.current = grid;
+  useEffect(() => {
+    configRef.current = config;
+    gridRef.current = grid;
+  }, [config, grid]);
 
   useEffect(() => {
     const container = containerRef.current;

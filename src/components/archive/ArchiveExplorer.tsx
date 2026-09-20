@@ -13,7 +13,9 @@ import {
   ShoppingBag,
   Sparkles,
   TrendingUp,
-  Link2
+  Link2,
+  Upload,
+  Download
 } from 'lucide-react';
 import { ReceiptCard } from './ReceiptCard';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -35,9 +37,18 @@ interface ArchiveExplorerProps {
   connections: Connection[];
   onSelectActivity: (id: string) => void;
   selectedActivityId?: string | null;
+  onOpenImport?: () => void;
+  onOpenExport?: () => void;
 }
 
-export function ArchiveExplorer({ activities, connections, onSelectActivity, selectedActivityId }: ArchiveExplorerProps) {
+export function ArchiveExplorer({
+  activities,
+  connections,
+  onSelectActivity,
+  selectedActivityId,
+  onOpenImport,
+  onOpenExport,
+}: ArchiveExplorerProps) {
   const [page, setPage] = useState(0);
   const [showFilters, setShowFilters] = useState(false);
 
@@ -229,6 +240,28 @@ export function ArchiveExplorer({ activities, connections, onSelectActivity, sel
             <option value="amount-asc">Amount: Low to High</option>
             <option value="title">Title A–Z</option>
           </select>
+
+          {onOpenImport && (
+            <button
+              onClick={onOpenImport}
+              className="hidden md:flex items-center gap-2 px-4 py-3.5 sm:py-4 bg-charcoal/90 hover:bg-surface border border-border/80 hover:border-amber/50 rounded-xl text-sm font-semibold text-ivory transition-all cursor-pointer shadow-sm"
+              title="Import dataset"
+            >
+              <Upload size={16} className="text-amber" />
+              <span>Import</span>
+            </button>
+          )}
+
+          {onOpenExport && (
+            <button
+              onClick={onOpenExport}
+              className="hidden md:flex items-center gap-2 px-4 py-3.5 sm:py-4 bg-charcoal/90 hover:bg-surface border border-border/80 hover:border-amber/50 rounded-xl text-sm font-semibold text-ivory transition-all cursor-pointer shadow-sm"
+              title="Export dataset"
+            >
+              <Download size={16} className="text-amber" />
+              <span>Export</span>
+            </button>
+          )}
         </div>
       </div>
 

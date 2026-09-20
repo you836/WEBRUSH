@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Calendar, Compass, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
+import { Compass, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 import { EchoText } from '@/components/ui/EchoText';
 import { formatShortMonth } from '@/lib/formatting';
 import type { LifeActivity, LifeSource } from '@/types';

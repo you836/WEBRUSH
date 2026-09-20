@@ -1,5 +1,5 @@
 import type { LifeActivity, StoryChapter, LifeSource } from '@/types';
-import { format, parseISO, differenceInDays } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 
 /**
  * Generate story chapters from actual data patterns.

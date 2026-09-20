@@ -6,12 +6,25 @@ import { PixelSwap } from '@/components/ui/PixelSwap';
 import { formatDate } from '@/lib/formatting';
 import type { StoryChapter } from '@/types';
 
+export type NarrativeTone = 'editorial' | 'analyst' | 'poetic';
+
 interface StoryChapterCardProps {
   chapter: StoryChapter;
+  tone?: NarrativeTone;
   onExplore: (activityIds: string[]) => void;
 }
 
-export function StoryChapterCard({ chapter, onExplore }: StoryChapterCardProps) {
+function formatSummaryByTone(chapter: StoryChapter, tone: NarrativeTone): string {
+  if (tone === 'analyst') {
+    return `[TELEMETRY_LOG]: ${chapter.activityIds.length} discrete data records validated (${formatDate(chapter.timeRange.start)} → ${formatDate(chapter.timeRange.end)}). Metric signature: ${chapter.pattern}. Validated via deterministic multi-source clustering.`;
+  }
+  if (tone === 'poetic') {
+    return `Fragments of lived time captured between ${formatDate(chapter.timeRange.start)} and ${formatDate(chapter.timeRange.end)}. Across ${chapter.activityIds.length} digital moments, an unmistakable cadence emerged: ${chapter.pattern.toLowerCase()}.`;
+  }
+  return chapter.summary;
+}
+
+export function StoryChapterCard({ chapter, tone = 'editorial', onExplore }: StoryChapterCardProps) {
   const [activeFace, setActiveFace] = useState(false);
 
   const borderColor = chapter.source === 'music'
@@ -21,6 +34,8 @@ export function StoryChapterCard({ chapter, onExplore }: StoryChapterCardProps) 
     : chapter.source === 'household'
     ? 'border-l-household'
     : 'border-l-amber';
+
+  const summaryText = formatSummaryByTone(chapter, tone);
 
   const frontFace = (
     <div className="p-6 sm:p-7 flex flex-col justify-between h-full space-y-4">
@@ -43,7 +58,7 @@ export function StoryChapterCard({ chapter, onExplore }: StoryChapterCardProps) 
         </h3>
 
         <p className="text-sm sm:text-base text-ivory-muted leading-relaxed">
-          {chapter.summary}
+          {summaryText}
         </p>
       </div>
 

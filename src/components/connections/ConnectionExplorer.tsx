@@ -3,8 +3,9 @@ import { motion } from 'motion/react';
 import { Link2, Zap, Calendar, Tag, Type, Layers, ChevronDown, Network } from 'lucide-react';
 import { SourceBadge } from '@/components/ui/SourceBadge';
 import { EchoText } from '@/components/ui/EchoText';
+import { CorrelationGraph } from './CorrelationGraph';
 import { getConnectionReasonLabel } from '@/lib/connections';
-import { truncate, formatDate } from '@/lib/formatting';
+import { formatDate } from '@/lib/formatting';
 import type { LifeActivity, Connection, ConnectionReason } from '@/types';
 
 const REASON_ICONS: Record<ConnectionReason, typeof Link2> = {
@@ -72,6 +73,9 @@ export function ConnectionExplorer({ connections, activities }: ConnectionExplor
           * Heuristic cross-source patterns are exploratory and indicate co-occurrence rather than direct causality.
         </p>
       </motion.div>
+
+      {/* Interactive Topology Graph */}
+      <CorrelationGraph connections={connections} activities={activities} />
 
       {/* Reason type summary */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">

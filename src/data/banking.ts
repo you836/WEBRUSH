@@ -26,8 +26,8 @@ export interface BankingRecord {
 
 function cleanMerchant(raw: string): string {
   if (!raw) return 'Unknown Merchant';
-  // Remove "fraud_" prefix from merchant names
-  return raw.replace(/^fraud_/i, '').trim() || 'Unknown Merchant';
+  // Remove "fraud_" prefix and replace underscores with spaces
+  return raw.replace(/^fraud_/i, '').replace(/_/g, ' ').trim() || 'Unknown Merchant';
 }
 
 function cleanCategory(raw: string): string {

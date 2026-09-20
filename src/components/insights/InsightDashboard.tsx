@@ -16,7 +16,6 @@ import {
   X,
   Database,
   ExternalLink,
-  Sliders,
   CheckCircle2,
 } from 'lucide-react';
 import {

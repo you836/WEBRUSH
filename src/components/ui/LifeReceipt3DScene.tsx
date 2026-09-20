@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unknown-property */
-import { useRef, useMemo } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Float, ContactShadows, Text, MeshReflectorMaterial } from '@react-three/drei';
+import { useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Float, ContactShadows, Text } from '@react-three/drei';
 import * as THREE from 'three';
 
 // Procedural Vinyl Record with Golden Center Label
@@ -162,12 +161,10 @@ function OrbitalRings() {
 
 // Interactive Camera & Mouse Parallax Rig
 function SceneRig() {
-  const { camera, pointer } = useThree();
-
-  useFrame(() => {
-    camera.position.x = THREE.MathUtils.lerp(camera.position.x, pointer.x * 0.8, 0.05);
-    camera.position.y = THREE.MathUtils.lerp(camera.position.y, pointer.y * 0.5, 0.05);
-    camera.lookAt(0, 0, 0);
+  useFrame((state) => {
+    state.camera.position.x = THREE.MathUtils.lerp(state.camera.position.x, state.pointer.x * 0.8, 0.05);
+    state.camera.position.y = THREE.MathUtils.lerp(state.camera.position.y, state.pointer.y * 0.5, 0.05);
+    state.camera.lookAt(0, 0, 0);
   });
 
   return null;

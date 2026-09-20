@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Sparkles, Eye, Layers, Compass } from 'lucide-react';
+import { Eye, Layers, Compass } from 'lucide-react';
 import { DriftWall, type DriftWallItem } from '@/components/ui/DriftWall';
 import { EchoText } from '@/components/ui/EchoText';
 

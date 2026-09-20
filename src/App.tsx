@@ -13,6 +13,10 @@ import { StorySection } from '@/components/story/StorySection';
 import { JourneyTimeline } from '@/components/journey/JourneyTimeline';
 import { ConnectionPanel } from '@/components/connections/ConnectionPanel';
 import { AnimatedBackground } from '@/components/ui/AnimatedBackground';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { KeyboardShortcutsModal } from '@/components/ui/KeyboardShortcutsModal';
+import { DataImportModal } from '@/components/archive/DataImportModal';
+import { DataExportModal } from '@/components/archive/DataExportModal';
 import type { LifeActivity, DataStats } from '@/types';
 import { motion, AnimatePresence } from 'motion/react';
 import { Loader2, ShieldCheck } from 'lucide-react';
@@ -23,6 +27,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [activities, setActivities] = useState<LifeActivity[]>([]);
   const [stats, setStats] = useState<DataStats | null>(null);
+  const [showShortcuts, setShowShortcuts] = useState(false);
+  const [showImport, setShowImport] = useState(false);
+  const [showExport, setShowExport] = useState(false);
 
   useEffect(() => {
     loadAllData().then(data => {
@@ -62,6 +69,54 @@ export default function App() {
     navigateTo('archive');
   }, [navigateTo]);
 
+  const handleImportActivities = useCallback((newActivities: LifeActivity[]) => {
+    setActivities(prev => {
+      const merged = [...newActivities, ...prev];
+      setStats(computeStats(merged));
+      return merged;
+    });
+  }, []);
+
+  // Global Keyboard Shortcuts Listener
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't trigger if user is typing in an input or textarea
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes((e.target as HTMLElement).tagName)) {
+        return;
+      }
+
+      if (e.key === '?' || (e.shiftKey && e.key === '/')) {
+        e.preventDefault();
+        setShowShortcuts(prev => !prev);
+      } else if (e.key === 'Escape') {
+        setShowShortcuts(false);
+        setShowImport(false);
+        setShowExport(false);
+        setSelectedActivityId(null);
+      } else if (e.key === '1') {
+        navigateTo('insights');
+      } else if (e.key === '2') {
+        navigateTo('gallery');
+      } else if (e.key === '3') {
+        navigateTo('archive');
+      } else if (e.key === '4') {
+        navigateTo('connections');
+      } else if (e.key === '5') {
+        navigateTo('stories');
+      } else if (e.key === '6') {
+        navigateTo('journey');
+      } else if (e.key === '/') {
+        e.preventDefault();
+        navigateTo('archive');
+        const searchInput = document.querySelector('input[aria-label="Search archive records"]') as HTMLInputElement | null;
+        searchInput?.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [navigateTo]);
+
   if (loading || !stats) {
     return (
       <div className="min-h-screen bg-midnight flex items-center justify-center p-6 relative overflow-hidden">
@@ -85,44 +140,53 @@ export default function App() {
       <AnimatedBackground />
 
       {/* Navigation - Edge to Edge */}
-      <Navigation activeSection={activeSection} onNavigate={navigateTo} />
+      <Navigation
+        activeSection={activeSection}
+        onNavigate={navigateTo}
+        onOpenImport={() => setShowImport(true)}
+        onOpenExport={() => setShowExport(true)}
+        onOpenShortcuts={() => setShowShortcuts(true)}
+      />
 
-      {/* Main Content Sections - Full Screen / Edge-to-Edge Coverage */}
-      <main className="w-full relative z-10">
-        <section id="section-hero" className="w-full">
-          <HeroSection stats={stats} onNavigate={navigateTo} />
-        </section>
+      {/* Main Content Sections wrapped in ErrorBoundary */}
+      <ErrorBoundary>
+        <main className="w-full relative z-10">
+          <section id="section-hero" className="w-full">
+            <HeroSection stats={stats} onNavigate={navigateTo} />
+          </section>
 
-        <section id="section-insights" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
-          <InsightDashboard stats={stats} activities={activities} />
-        </section>
+          <section id="section-insights" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+            <InsightDashboard stats={stats} activities={activities} />
+          </section>
 
-        <section id="section-gallery" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
-          <MemoryWallSection />
-        </section>
+          <section id="section-gallery" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+            <MemoryWallSection />
+          </section>
 
-        <section id="section-archive" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
-          <ArchiveExplorer
-            activities={activities}
-            connections={connections}
-            onSelectActivity={handleSelectActivity}
-            selectedActivityId={selectedActivityId}
-          />
-        </section>
+          <section id="section-archive" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+            <ArchiveExplorer
+              activities={activities}
+              connections={connections}
+              onSelectActivity={handleSelectActivity}
+              selectedActivityId={selectedActivityId}
+              onOpenImport={() => setShowImport(true)}
+              onOpenExport={() => setShowExport(true)}
+            />
+          </section>
 
+          <section id="section-connections" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+            <ConnectionExplorer connections={connections} activities={activities} />
+          </section>
 
-        <section id="section-connections" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
-          <ConnectionExplorer connections={connections} activities={activities} />
-        </section>
+          <section id="section-stories" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+            <StorySection chapters={chapters} onExplore={handleExploreRecords} />
+          </section>
 
-        <section id="section-stories" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
-          <StorySection chapters={chapters} onExplore={handleExploreRecords} />
-        </section>
-
-        <section id="section-journey" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
-          <JourneyTimeline activities={activities} onSelectMonth={handleSelectMonth} />
-        </section>
-      </main>
+          <section id="section-journey" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+            <JourneyTimeline activities={activities} onSelectMonth={handleSelectMonth} />
+          </section>
+        </main>
+      </ErrorBoundary>
 
       {/* Full-width Editorial Footer */}
       <footer className="w-full border-t border-border px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 relative z-10 bg-midnight/60 backdrop-blur-md">
@@ -162,6 +226,25 @@ export default function App() {
           />
         )}
       </AnimatePresence>
+
+      {/* Interactive Modals */}
+      <KeyboardShortcutsModal
+        isOpen={showShortcuts}
+        onClose={() => setShowShortcuts(false)}
+      />
+
+      <DataImportModal
+        isOpen={showImport}
+        onClose={() => setShowImport(false)}
+        onImport={handleImportActivities}
+      />
+
+      <DataExportModal
+        isOpen={showExport}
+        onClose={() => setShowExport(false)}
+        activities={activities}
+        chapters={chapters}
+      />
     </div>
   );
 }

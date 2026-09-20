@@ -1,11 +1,5 @@
-import type { LifeActivity, Connection, ConnectionReason } from '@/types';
-import { format, differenceInHours, differenceInDays, parseISO } from 'date-fns';
-
-interface ConnectionCandidate {
-  activityA: LifeActivity;
-  activityB: LifeActivity;
-  reasons: { reason: ConnectionReason; strength: number; signal: string }[];
-}
+import type { LifeActivity, Connection } from '@/types';
+import { format, differenceInHours, parseISO } from 'date-fns';
 
 /**
  * Discover meaningful relationships between activities using deterministic rules.

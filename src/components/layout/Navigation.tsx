@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Upload, Download, HelpCircle } from 'lucide-react';
 import { RubberSegment, type RubberSegmentItem } from '@/components/ui/RubberSegment';
 import type { ActiveSection } from '@/types';
 
@@ -21,9 +21,18 @@ const RUBBER_NAV_ITEMS: RubberSegmentItem[] = NAV_ITEMS.map(item => ({
 interface NavigationProps {
   activeSection: ActiveSection;
   onNavigate: (section: ActiveSection) => void;
+  onOpenImport?: () => void;
+  onOpenExport?: () => void;
+  onOpenShortcuts?: () => void;
 }
 
-export function Navigation({ activeSection, onNavigate }: NavigationProps) {
+export function Navigation({
+  activeSection,
+  onNavigate,
+  onOpenImport,
+  onOpenExport,
+  onOpenShortcuts,
+}: NavigationProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   // Close mobile menu on escape key or resize
@@ -59,8 +68,8 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
               <span>LIFE / RECEIPTS</span>
             </button>
 
-            {/* Desktop RubberSegment Nav */}
-            <div className="hidden md:flex items-center">
+            {/* Desktop RubberSegment Nav & Action Utilities */}
+            <div className="hidden md:flex items-center gap-3">
               <RubberSegment
                 items={RUBBER_NAV_ITEMS}
                 value={activeSection !== 'hero' ? activeSection : undefined}
@@ -78,6 +87,39 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
                 draggable={true}
                 className="border border-border/50 shadow-inner"
               />
+
+              {/* Utility actions */}
+              <div className="flex items-center gap-1.5 pl-2 border-l border-border/60 font-mono text-xs">
+                {onOpenImport && (
+                  <button
+                    onClick={onOpenImport}
+                    title="Import custom CSV/JSON life dataset"
+                    className="p-2 rounded-lg bg-surface hover:bg-surface-light border border-border/60 text-ivory-muted hover:text-ivory transition-colors flex items-center gap-1.5"
+                  >
+                    <Upload size={14} className="text-amber" />
+                    <span className="hidden xl:inline">Import</span>
+                  </button>
+                )}
+                {onOpenExport && (
+                  <button
+                    onClick={onOpenExport}
+                    title="Export synthesized story and telemetry data"
+                    className="p-2 rounded-lg bg-surface hover:bg-surface-light border border-border/60 text-ivory-muted hover:text-ivory transition-colors flex items-center gap-1.5"
+                  >
+                    <Download size={14} className="text-amber" />
+                    <span className="hidden xl:inline">Export</span>
+                  </button>
+                )}
+                {onOpenShortcuts && (
+                  <button
+                    onClick={onOpenShortcuts}
+                    title="Keyboard shortcuts (?)"
+                    className="p-2 rounded-lg bg-surface hover:bg-surface-light border border-border/60 text-ivory-muted hover:text-ivory transition-colors"
+                  >
+                    <HelpCircle size={15} />
+                  </button>
+                )}
+              </div>
             </div>
 
 
@@ -122,6 +164,45 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
                   )}
                 </button>
               ))}
+
+              <div className="pt-3 border-t border-border/60 grid grid-cols-3 gap-2">
+                {onOpenImport && (
+                  <button
+                    onClick={() => {
+                      onOpenImport();
+                      setMobileOpen(false);
+                    }}
+                    className="p-2.5 rounded-lg bg-surface hover:bg-surface-light border border-border/60 text-xs font-mono text-ivory flex flex-col items-center gap-1"
+                  >
+                    <Upload size={16} className="text-amber" />
+                    <span>Import</span>
+                  </button>
+                )}
+                {onOpenExport && (
+                  <button
+                    onClick={() => {
+                      onOpenExport();
+                      setMobileOpen(false);
+                    }}
+                    className="p-2.5 rounded-lg bg-surface hover:bg-surface-light border border-border/60 text-xs font-mono text-ivory flex flex-col items-center gap-1"
+                  >
+                    <Download size={16} className="text-amber" />
+                    <span>Export</span>
+                  </button>
+                )}
+                {onOpenShortcuts && (
+                  <button
+                    onClick={() => {
+                      onOpenShortcuts();
+                      setMobileOpen(false);
+                    }}
+                    className="p-2.5 rounded-lg bg-surface hover:bg-surface-light border border-border/60 text-xs font-mono text-ivory flex flex-col items-center gap-1"
+                  >
+                    <HelpCircle size={16} />
+                    <span>Keys</span>
+                  </button>
+                )}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
