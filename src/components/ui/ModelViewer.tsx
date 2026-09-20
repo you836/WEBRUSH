@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useRef, useLayoutEffect, useEffect, useMemo, type CSSProperties } from 'react';
 import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
-import { useGLTF, useFBX, useProgress, Html, Environment, ContactShadows } from '@react-three/drei';
+import { useGLTF, useFBX, useProgress, Html, Environment } from '@react-three/drei';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import * as THREE from 'three';
 
