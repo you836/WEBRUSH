@@ -136,6 +136,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen w-full bg-midnight text-ivory overflow-x-hidden selection:bg-amber/30 selection:text-ivory relative">
+      {/* Accessibility Skip Link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-amber focus:text-midnight focus:font-bold focus:rounded-xl focus:shadow-2xl"
+      >
+        Skip to main content
+      </a>
+
       {/* Dynamic Animated Ambient Background */}
       <AnimatedBackground />
 
@@ -150,16 +158,16 @@ export default function App() {
 
       {/* Main Content Sections wrapped in ErrorBoundary */}
       <ErrorBoundary>
-        <main className="w-full relative z-10">
-          <section id="section-hero" className="w-full">
+        <main id="main-content" role="main" className="w-full relative z-10" aria-label="Main life narrative content">
+          <section id="section-hero" className="w-full" aria-label="Hero Overview">
             <HeroSection stats={stats} onNavigate={navigateTo} />
           </section>
 
-          <section id="section-insights" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+          <section id="section-insights" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40" aria-label="Analytical Insights">
             <InsightDashboard stats={stats} activities={activities} />
           </section>
 
-          <section id="section-gallery" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40">
+          <section id="section-gallery" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 border-t border-border/40" aria-label="Memory Wall Gallery">
             <MemoryWallSection />
           </section>
 

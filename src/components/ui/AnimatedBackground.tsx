@@ -87,25 +87,25 @@ export function AnimatedBackground() {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none" aria-hidden="true">
-      {/* 3D High-Res Interior Classroom - Crisp, bright, and clearly visible */}
+      {/* 3D High-Res Interior Classroom - Crisp, bright, full opacity */}
       <div className="absolute inset-0 w-full h-full opacity-100 pointer-events-none">
         <ModelViewer
           url="/models/classroom.glb"
           height="100vh"
           width="100vw"
-          targetScale={4.2}
-          defaultZoom={2.4}
-          modelYOffset={-0.35}
-          defaultRotationX={-18}
-          defaultRotationY={24}
+          targetScale={5.0}
+          defaultZoom={2.0}
+          modelYOffset={-0.28}
+          defaultRotationX={-14}
+          defaultRotationY={20}
           hideCeiling={true}
           hideObstructingWalls={true}
           swayMode={true}
-          autoRotateSpeed={0.25}
-          ambientIntensity={3.4}
-          keyLightIntensity={5.2}
-          fillLightIntensity={4.0}
-          rimLightIntensity={3.8}
+          autoRotateSpeed={0.22}
+          ambientIntensity={4.2}
+          keyLightIntensity={6.0}
+          fillLightIntensity={4.8}
+          rimLightIntensity={4.5}
           environmentPreset="sunset"
           enableHoverRotation={true}
           enableMouseParallax={true}
@@ -113,21 +113,8 @@ export function AnimatedBackground() {
         />
       </div>
 
-      {/* Gentle transparent ambient tint for readability without hiding the 3D model */}
-      <div className="absolute inset-0 bg-midnight/25 pointer-events-none" />
-      <div className="absolute inset-0 bg-radial from-transparent via-midnight/10 to-midnight/50 pointer-events-none" />
-
-      {/* Subtle geometric dot grid pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.02] pointer-events-none"
-        style={{
-          backgroundImage: `radial-gradient(rgba(245, 240, 232, 0.4) 1px, transparent 1px)`,
-          backgroundSize: '32px 32px',
-        }}
-      />
-
-      {/* Subtle ambient canvas layer */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" />
+      {/* Subtle ambient particles */}
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-15 pointer-events-none" />
     </div>
   );
 }
