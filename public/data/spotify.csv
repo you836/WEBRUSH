@@ -1,0 +1,501 @@
+spotify_track_uri,ts,platform,ms_played,track_name,artist_name,album_name,reason_start,reason_end,shuffle,skipped
+2J3n32GeLmMjwuAzyhcSNe,2013-07-08 02:44:34,web player,3185,"Say It, Just Say It",The Mowgli's,Waiting For The Dawn,autoplay,clickrow,FALSE,FALSE
+0mF3Ysmjl4QluLh4sZVnzf,2015-06-22 07:20:51,android,16317,The Best Is Yet To Come - 2008 Remastered,Frank Sinatra,Nothing But The Best,clickrow,endplay,TRUE,TRUE
+2I9Q2Ry4TPOTgf4XwgULX4,2015-08-12 05:13:15,iOS,93622,El Taquicardio,El Komander,Belico,clickrow,endplay,FALSE,TRUE
+22mek4IiqubGD9ctzxc69s,2015-08-25 21:49:52,android,1857,How Deep Is Your Love,Calvin Harris,How Deep Is Your Love,fwdbtn,fwdbtn,TRUE,TRUE
+2uSfIjpKzS005os2fy3NPN,2015-08-29 18:03:05,android,5247,In A Week,Hozier,Hozier,fwdbtn,fwdbtn,TRUE,TRUE
+1v5cgIyffYtfEx0swttdoE,2015-09-01 01:47:28,windows,5015,Bring Da Ruckus,Wu-Tang Clan,Enter The Wu-Tang (36 Chambers) [Expanded Edition],fwdbtn,fwdbtn,TRUE,TRUE
+7yR50dqQ9I4fyvbk3pHfgl,2015-09-19 02:51:10,android,1532,Queen of Hearts,We The Kings,Somewhere Somehow,fwdbtn,fwdbtn,FALSE,TRUE
+3IdtoXNER6fuBWv4fs0ICX,2015-10-02 23:44:31,android,3622,Eres una Niña,Gerardo Ortiz,Archivos de Mi Vida,backbtn,backbtn,FALSE,TRUE
+3DlyHvU6blSBCJqzlJlVFK,2015-10-11 08:36:20,android,2089,Everybody's Changing,Keane,Hopes and Fears,appload,endplay,FALSE,TRUE
+190jyVPHYjAqEaOGmMzdyk,2015-10-28 02:07:59,android,91728,Beauty And A Beat,Justin Bieber,Believe,trackdone,fwdbtn,TRUE,TRUE
+5vHJLtCTx7vqXI0ABzIzzH,2015-12-19 06:52:10,android,0,A Escondidas,Lucah,A Escondidas,appload,endplay,TRUE,TRUE
+4LgIcna8LRrR3DOomihYMY,2016-06-03 21:27:02,iOS,232733,Shiver Shiver,WALK THE MOON,Walk The Moon,trackdone,trackdone,TRUE,FALSE
+0oEweHsuQagFuqXct9UvBm,2016-06-08 04:55:28,android,191426,What You Know,Two Door Cinema Club,Tourist History,trackdone,trackdone,TRUE,FALSE
+5Q41NLTmGbVPozwHKK7bk2,2016-06-26 01:59:43,android,1003,Paradise City,Guns N' Roses,Appetite For Destruction,trackdone,unexpected-exit,TRUE,FALSE
+7pKfPomDEeI4TPT6EOYjn9,2016-07-19 08:54:40,android,187866,Imagine - Remastered 2010,John Lennon,Imagine,trackdone,trackdone,TRUE,FALSE
+5XNpdKmlLJPUbwKQceX2tW,2016-08-04 19:35:26,android,60967,Little Wing,Stevie Ray Vaughan,Couldn't Stand The Weather (Legacy Edition),clickrow,endplay,TRUE,FALSE
+6L3VWDPDTQkQFkqvmpAUMU,2016-08-17 01:49:03,iOS,228466,Something to Believe In,Young the Giant,Home of the Strange,trackdone,trackdone,FALSE,FALSE
+2g34T4Zs54pTRR1AYTjobc,2016-08-20 07:37:31,android,227853,"San Quentin - Live at San Quentin State Prison, San Quentin, CA - February 1969",Johnny Cash,At San Quentin,clickrow,trackdone,FALSE,FALSE
+4p4XgwnZJCYOWSvz8ruiOY,2016-09-01 01:47:59,iOS,0,"Take the ""A"" Train",Duke Ellington,Jazz Profiles,clickrow,endplay,FALSE,FALSE
+5FlBGGwGuqYmqr0qeBWrxe,2016-09-15 06:33:59,android,264960,Five to One,The Doors,Waiting for the Sun,clickrow,trackdone,TRUE,FALSE
+6CMUbdue9apkMR5RvIuA3H,2016-10-12 08:24:54,android,4170,Que Te Ruegue Quien Te Quiera,Banda El Recodo,Te Presumo,clickrow,endplay,TRUE,FALSE
+5wQnmLuC1W7ATsArWACrgW,2016-11-07 04:53:08,android,4273,Welcome to the Black Parade,My Chemical Romance,The Black Parade,fwdbtn,fwdbtn,FALSE,FALSE
+64yrDBpcdwEdNY9loyEGbX,2016-11-28 20:57:18,android,321093,21 Guns,Green Day,21st Century Breakdown,trackdone,trackdone,TRUE,FALSE
+6pPOkr2OxhQ6htrzOiDmq9,2016-12-01 21:52:12,android,158626,Mr Moonlight - Remastered 2009,The Beatles,Beatles For Sale,trackdone,trackdone,TRUE,FALSE
+5wiSvJf7926YmB4XXGwiIT,2016-12-03 20:58:15,android,79947,I Forgot To Remember To Forget - 2004 DSD remaster,Elvis Presley,Elvis At Sun,fwdbtn,fwdbtn,TRUE,FALSE
+38KeSzb6FZYSogDXpc7xz8,2016-12-06 01:39:24,android,2064,Babe I'm Gonna Leave You - Remaster,Led Zeppelin,Led Zeppelin,fwdbtn,fwdbtn,TRUE,FALSE
+6i0V12jOa3mr6uu4WYhUBr,2016-12-09 04:24:26,iOS,16834,Heathens,Twenty One Pilots,Heathens,clickrow,endplay,TRUE,FALSE
+27MoAJ0eGv3xofZBCQiTbx,2016-12-12 22:06:28,android,3514,Run Me Down,The Black Keys,The Big Come Up,fwdbtn,fwdbtn,FALSE,FALSE
+2UzMpPKPhbcC8RbsmuURAZ,2016-12-17 09:08:54,android,1081,Do I Wanna Know?,Arctic Monkeys,AM,fwdbtn,fwdbtn,TRUE,FALSE
+5OkKOkdVTKFrYi6GWXkMzR,2016-12-21 09:21:16,android,145095,Volare (Nel Blu Di Pinto Di Blu) - Remastered 1998,Dean Martin,This Is Dean Martin,trackdone,fwdbtn,TRUE,FALSE
+4qQ8sToR3GNossXlwSlyKz,2016-12-25 02:59:20,android,6305,Ain't That A Kick In The Head - Remastered 1997,Dean Martin,At The Movies,fwdbtn,fwdbtn,TRUE,FALSE
+6WvgizUMVUdPksmm7BMfnm,2016-12-29 21:29:13,android,7201,I Got The Blues - 2009 Mix,The Rolling Stones,Sticky Fingers,fwdbtn,fwdbtn,TRUE,FALSE
+0wPsNowg8sXsPWrrhEAEWw,2017-01-03 06:11:35,android,182453,Georgia On My Mind - Remastered,Dean Martin,Swingin' Down Yonder,fwdbtn,trackdone,TRUE,FALSE
+4ltC6PrqkTtpcRNi5lvS4z,2017-01-06 06:45:10,android,3972,No Reply - Remastered 2009,The Beatles,Beatles For Sale,fwdbtn,fwdbtn,TRUE,FALSE
+4T7wVGxTMOGUSbpKqSv8PQ,2017-01-07 21:06:41,android,228161,Rocks Off,The Rolling Stones,Exile On Main St,fwdbtn,fwdbtn,TRUE,FALSE
+0BRHnOFm6sjxN1i9LJrUDu,2017-01-09 08:57:27,android,1231,The Anthem,Good Charlotte,The Young and The Hopeless,fwdbtn,fwdbtn,TRUE,FALSE
+1OCSXzTwudWcGZTID3w8kj,2017-01-10 22:19:57,android,3550,Be Still,The Killers,Battle Born,fwdbtn,fwdbtn,TRUE,FALSE
+1FTCA6wQwulQFokDddKE68,2017-01-12 05:36:54,android,72640,Polythene Pam - Remastered 2009,The Beatles,Abbey Road,fwdbtn,trackdone,TRUE,FALSE
+0uco0wQkB909zpPlHvu5Cc,2017-01-15 02:11:31,android,17642,Bold as Love,Jimi Hendrix,Axis: Bold As Love,fwdbtn,fwdbtn,TRUE,FALSE
+4SBc2Pkh8tVSecrkLtCAXR,2017-01-17 03:06:31,android,66457,White Blank Page,Mumford & Sons,Sigh No More,trackdone,logout,TRUE,FALSE
+0vg4WnUWvze6pBOJDTq99k,2017-02-05 09:48:42,android,209493,You're Beautiful,James Blunt,Back to Bedlam,trackdone,trackdone,TRUE,FALSE
+5xhQChGGhKLWqBqX4XhtYE,2017-02-15 19:11:31,iOS,1044,Sail,AWOLNATION,Megalithic Symphony Deluxe,fwdbtn,fwdbtn,FALSE,FALSE
+2zzLRQ78kKfPTx8FJQCdC2,2017-03-08 18:16:29,iOS,20178,When The Sun Goes Down,Arctic Monkeys,"Whatever People Say I Am, That's What I'm Not",clickrow,endplay,TRUE,FALSE
+6lTTzSk1hRrxp4VMwXBp2l,2017-03-11 08:09:06,android,274933,My Way,Frank Sinatra,Ultimate Sinatra,fwdbtn,trackdone,TRUE,FALSE
+40qXGg5nRbcWzcFb26KWkQ,2017-03-18 17:09:16,android,22088,Misery - Remastered 2009,The Beatles,Please Please Me,fwdbtn,endplay,TRUE,FALSE
+2quTytCTP9kKLvpveyO1mt,2017-03-23 09:26:10,android,249000,Para Tu Amor,Juanes,Mi Sangre,trackdone,trackdone,TRUE,FALSE
+5790D9sgPum0aE59ES7X1v,2017-03-27 06:25:04,android,160290,RIVA (Restart the Game) - Radio Edit,Klingande,RIVA (Restart The Game),fwdbtn,fwdbtn,TRUE,FALSE
+1rqft0hZaB7hilxKmKwDDH,2017-04-02 21:42:13,android,256800,That's Where You're Wrong,Arctic Monkeys,Suck It And See,trackdone,trackdone,TRUE,FALSE
+78MXICbE7bD4cuPKFh1EFO,2017-04-05 17:35:42,iOS,210227,Celebration Day - Remaster,Led Zeppelin,Led Zeppelin III,trackdone,trackdone,TRUE,FALSE
+6hIFsqNSygdgDwnVi3BkUJ,2017-04-09 14:51:55,iOS,201733,Revelry,Kings of Leon,Only By The Night,trackdone,trackdone,TRUE,FALSE
+5ddXMXmXZ2FN4iliTG20nO,2017-04-14 07:20:20,android,239666,Emoji of a Wave,John Mayer,The Search for Everything,trackdone,trackdone,FALSE,FALSE
+5y2KMaT44umaDJWXJHcYjN,2017-04-20 19:04:23,android,109733,Do You Hear the People Sing?,Les Misérables - 10th Anniversary Concert Cast,Les Misérables (In Concert at the Royal Albert Hall),trackdone,trackdone,TRUE,FALSE
+0QTCTu0CXv4X1JEE4gNpGv,2017-04-22 10:00:07,android,253493,Wildfire,John Mayer,Paradise Valley,trackdone,trackdone,TRUE,FALSE
+7iN1s7xHE4ifF5povM6A48,2017-04-29 11:26:26,android,243026,Let It Be - Remastered 2009,The Beatles,Let It Be,trackdone,trackdone,TRUE,FALSE
+0Of7QOxHibUJW7q0YFBJVC,2017-05-05 23:09:49,android,201148,Leave The Bourbon On The Shelf,The Killers,Sawdust,trackdone,fwdbtn,FALSE,FALSE
+35LDid9nvuYrUyZk5qGD0i,2017-05-13 04:20:50,android,242333,Belief,John Mayer,Continuum,trackdone,trackdone,TRUE,FALSE
+7xSfYroWIAiwfQBR1P8WMD,2017-05-21 18:20:11,iOS,228546,Juan Charrasqueado,Vicente Fernández,Vicente Fernández Y Sus Corridos Consentidos,trackdone,trackdone,TRUE,FALSE
+2bkwHzn1H2CxyLmmymaKHo,2017-05-25 23:34:00,android,52119,My House,Lou Reed,The Blue Mask,clickrow,endplay,FALSE,FALSE
+2YsKxAJKUJx93BKxzQ3RTr,2017-05-28 19:06:55,iOS,13378,With A Little Help From My Friends - Remix,The Beatles,Sgt. Pepper's Lonely Hearts Club Band,trackdone,endplay,FALSE,FALSE
+5SI9IqXXoXic1gy93XVdS0,2017-06-08 13:34:48,android,216621,Ball And Biscuit,The White Stripes,Elephant,trackdone,logout,TRUE,FALSE
+3if5BCKrShIHsYbs5IzTHH,2017-06-20 10:38:13,android,194200,Tiptoe,Imagine Dragons,Night Visions,trackdone,trackdone,TRUE,FALSE
+77Y57qRJBvkGCUw9qs0qMg,2017-06-26 08:31:32,android,243666,In the Blood,John Mayer,The Search for Everything,clickrow,trackdone,FALSE,FALSE
+0w4pxkiUCwFQk2UY8twlu3,2017-06-30 18:34:10,android,304033,Pale Blue Eyes,The Velvet Underground,The Velvet Underground,clickrow,endplay,TRUE,FALSE
+2Q9gMRzQF3PTuJ3dCVVwmx,2017-07-04 02:59:13,android,2741,You're Nobody Till Somebody Loves You,Dean Martin,The Essential Dean Martin,fwdbtn,fwdbtn,TRUE,FALSE
+5MxNLUsfh7uzROypsoO5qe,2017-07-05 20:11:42,android,2397,Dream On,Aerosmith,Aerosmith,fwdbtn,fwdbtn,TRUE,FALSE
+6A6qBFJHid4WutQu6HHEZt,2017-07-06 08:43:43,android,1960,Walking On A Dream,Empire Of The Sun,Walking On A Dream,fwdbtn,fwdbtn,TRUE,FALSE
+1VuBmEauSZywQVtqbxNqka,2017-07-07 18:36:59,android,0,Beautiful Day,U2,All That You Can't Leave Behind,fwdbtn,fwdbtn,TRUE,FALSE
+6QaBuSmU5NpdW2jcL27aB6,2017-07-08 16:31:36,android,1938,Domingo en la Mañana,Lucah,Voy a Ti,fwdbtn,fwdbtn,TRUE,FALSE
+6bhs4IsdCiZ3MkHEvSCKfk,2017-07-09 19:35:43,android,2338,This River Is Wild,The Killers,Sam's Town,fwdbtn,fwdbtn,TRUE,FALSE
+5xo1Gj4WTssjQgQ0w03cf2,2017-07-10 21:29:30,android,33015,Jackie And Wilson,Hozier,Hozier,fwdbtn,fwdbtn,TRUE,FALSE
+5B0c2pERMO7CrQP9CdbKrl,2017-07-14 19:25:12,android,2281,"Don't Give up on ""Us""",The Maine,Pioneer,clickrow,fwdbtn,TRUE,FALSE
+5vamMB1r3rtCtGVe5LB9VM,2017-07-15 19:10:09,android,2016,Jet Lag (feat. Natasha Bedingfield),Simple Plan,Get Your Heart On!,fwdbtn,fwdbtn,TRUE,FALSE
+10fHq85ktXp1K8mO45bugT,2017-07-20 19:21:12,android,2275,Que Lloro,Sin Bandera,Hasta Ahora,fwdbtn,fwdbtn,TRUE,FALSE
+4KANJH1baadr3U7XsVbM17,2017-07-22 00:42:15,android,241266,Something I Need,OneRepublic,Native,trackdone,trackdone,TRUE,FALSE
+76YIakOtee617B4McuRJH6,2017-07-27 20:11:01,android,178805,De Puño Y Letra,Antonio Aguilar,Bala Perdida,trackdone,trackdone,TRUE,FALSE
+3d8HHp62VSr68R51OurJiR,2017-07-31 03:24:39,android,221,Over You,Daughtry,Daughtry,fwdbtn,fwdbtn,TRUE,FALSE
+6O6zRZhk8sQc5shBXhx7SJ,2017-08-04 20:05:17,android,256933,12 Fingers,Young the Giant,Young The Giant,trackdone,trackdone,TRUE,FALSE
+2H6rj2XaBUJnag8iS2uKCt,2017-08-06 22:16:51,android,2087,Don't Lie,Vampire Weekend,Modern Vampires of the City,fwdbtn,fwdbtn,TRUE,FALSE
+4cQIbDqCZrHknxlDUjRHZ0,2017-08-11 18:43:26,android,0,Supersoaker,Kings of Leon,Mechanical Bull (Expanded Edition),fwdbtn,fwdbtn,TRUE,FALSE
+2dLzyrwHEEK8umYoOYaSPc,2017-08-13 11:15:18,android,2854,"I Still Miss Someone - Live at Folsom State Prison, Folsom, CA (1st Show) - January 1968",Johnny Cash,At Folsom Prison,fwdbtn,fwdbtn,TRUE,FALSE
+1evEO1ep4O4XDklg3baSqp,2017-08-16 02:59:23,android,0,Age of Light,The Mud Howlers,Timeliness,fwdbtn,backbtn,TRUE,FALSE
+305WCRhhS10XUcH6AEwZk6,2017-08-17 22:09:28,android,2925,Are You Gonna Be My Girl,Jet,Get Born,fwdbtn,fwdbtn,TRUE,FALSE
+6J4lRYUiuWO7BLOntAJnUx,2017-08-21 17:50:04,android,715,Busload of Faith,Lou Reed,New York,fwdbtn,fwdbtn,TRUE,FALSE
+7nL48xOPl0CraSaxKonp8j,2017-08-23 23:50:11,android,181352,That's Life,Frank Sinatra,Ultimate Sinatra,fwdbtn,fwdbtn,TRUE,FALSE
+2Or0wXPDzd8Nt5F55vtVHY,2017-08-27 23:41:18,android,11333,Holy Roller Novocaine,Kings of Leon,Youth And Young Manhood,fwdbtn,fwdbtn,TRUE,FALSE
+39e1gl7VaxuCev5ga7bvNq,2017-08-29 07:49:24,android,52,In Time,The Black Keys,Turn Blue,fwdbtn,fwdbtn,TRUE,FALSE
+70PT6bNLK1svVhcDLmQ8xF,2017-09-02 00:30:50,windows,19090,Suelta Mi Mano,Sin Bandera,Hasta Ahora,trackdone,endplay,TRUE,FALSE
+4LLBKnNCrSRrSjSTuiwjE9,2017-09-03 11:06:09,android,172,You Won't See Me - Remastered 2009,The Beatles,Rubber Soul,fwdbtn,fwdbtn,TRUE,FALSE
+3e6rEdPXVBXRhppmKiwsh7,2017-09-04 16:59:35,android,4442,Gimme Shelter,The Rolling Stones,Let It Bleed,fwdbtn,fwdbtn,TRUE,FALSE
+7JxGM1R32ZqfwZou3VtnTg,2017-09-05 23:25:13,android,2256,Boys - Remastered 2009,The Beatles,Please Please Me,fwdbtn,fwdbtn,FALSE,FALSE
+30YiNK4ZeDEnuMddYTWZcz,2017-09-06 17:00:41,android,960,Fine by Me,Andy Grammer,Magazines or Novels,fwdbtn,fwdbtn,FALSE,FALSE
+27E39dDg0Bx1RzkF3eJJsb,2017-09-06 17:54:09,android,0,I Want To Hold Your Hand - Remastered 2009,The Beatles,Past Masters,fwdbtn,fwdbtn,FALSE,FALSE
+3VbGCXWRiouAq8VyMYN2MI,2017-09-06 21:25:52,android,2103,Love Me Do - Remastered 2009,The Beatles,Please Please Me,backbtn,fwdbtn,FALSE,FALSE
+1Uol5x9ClPOm9X2F3lsyNR,2017-09-06 22:09:58,android,0,Por Tu Maldito Amor,Vicente Fernández,"35 Anniversary Re-mastered Series, Vol. 7",fwdbtn,fwdbtn,FALSE,FALSE
+7e89621JPkKaeDSTQ3avtg,2017-09-06 22:34:48,android,1414,Sweet Home Alabama,Lynyrd Skynyrd,Second Helping,fwdbtn,fwdbtn,FALSE,FALSE
+4B0JvthVoAAuygILe3n4Bs,2017-09-06 23:01:55,android,716,What Do You Mean?,Justin Bieber,Purpose,fwdbtn,fwdbtn,FALSE,FALSE
+7hN5TKSdRb56uytwIpcUES,2017-09-07 23:36:14,android,4652,99 Problems,Hugo,Old Tyme Religion,fwdbtn,fwdbtn,TRUE,FALSE
+5wiSvJf7926YmB4XXGwiIT,2017-09-08 20:50:27,android,2955,I Forgot To Remember To Forget - 2004 DSD remaster,Elvis Presley,Elvis At Sun,fwdbtn,fwdbtn,TRUE,FALSE
+6wtmql7FJ7SSLuSw8JD8rX,2017-09-10 00:29:28,windows,29850,Spanish Bombs - Remastered,The Clash,London Calling (Remastered),clickrow,fwdbtn,FALSE,FALSE
+1b7LMtXCXGc2EwOIplI35z,2017-09-11 20:53:54,android,2234,Stuck In The Middle With You,Stealers Wheel,Reservoir Dogs,fwdbtn,fwdbtn,TRUE,FALSE
+1yqMgZNrevsWMLWfO2PRp5,2017-09-14 19:23:13,android,1867,Charlie Brown,Coldplay,Mylo Xyloto,fwdbtn,fwdbtn,TRUE,FALSE
+0ZfP7K8NoyJRjEfWWk8Mlv,2017-09-20 17:11:01,android,283000,Rock & Roll - Full Length Version; 2015 Remaster,The Velvet Underground,Loaded,trackdone,trackdone,TRUE,FALSE
+2OevuDV8nSmeHJkFQ0OqTO,2017-09-24 23:28:24,android,245768,Believe Me Natalie,The Killers,Hot Fuss,fwdbtn,fwdbtn,FALSE,FALSE
+0pQskrTITgmCMyr85tb9qq,2017-09-30 06:06:08,android,254295,Starman - 2012 Remaster,David Bowie,The Rise and Fall of Ziggy Stardust and the Spiders from Mars,trackdone,trackdone,TRUE,FALSE
+0FHNqVPxu14WivXR4Y2hFr,2017-10-06 02:08:06,android,85503,Creo en Ti,Reik,Peligro,trackdone,fwdbtn,TRUE,FALSE
+1yJZwBqTyGTB7mz8nZyiel,2017-10-09 00:48:07,android,2771,Barcelona,George Ezra,Wanted on Voyage,fwdbtn,fwdbtn,TRUE,FALSE
+2yVPS6mE2BQpen5wnBLoN9,2017-10-12 21:12:52,android,41379,Dream On,Noel Gallagher's High Flying Birds,Noel Gallagher's High Flying Birds,trackdone,endplay,FALSE,FALSE
+4bvi8n8Xa2kX0UG02cvuE9,2017-10-15 03:32:43,android,0,Married with Children - 2014 Remaster,Oasis,Definitely Maybe,clickrow,endplay,FALSE,FALSE
+7gREIuHognJFspylIDJ94p,2017-10-17 05:28:51,windows,214240,Vienna,Billy Joel,The Stranger,trackdone,trackdone,FALSE,FALSE
+1hIupFeRu3nmMcjbjxPnMc,2017-10-21 17:22:31,android,89363,I'm Just A Kid,Simple Plan,"No Pads, No Helmets...Just Balls",trackdone,fwdbtn,TRUE,FALSE
+3KfbEIOC7YIv90FIfNSZpo,2017-10-27 16:39:10,android,146333,In My Life - Remastered 2009,The Beatles,Rubber Soul,trackdone,trackdone,TRUE,FALSE
+01SfTM5nfCou5gQL70r6gs,2017-10-30 21:31:30,android,91760,Golden Slumbers - Remastered 2009,The Beatles,Abbey Road,trackdone,trackdone,FALSE,FALSE
+4ltC6PrqkTtpcRNi5lvS4z,2017-11-05 18:39:19,android,136066,No Reply - Remastered 2009,The Beatles,Beatles For Sale - Remastered,backbtn,trackdone,FALSE,FALSE
+4dyBuBbYZj1iiK0ywYjYzT,2017-11-11 22:46:34,android,127746,California Sun - 2017 Remaster,Ramones,Leave Home,fwdbtn,trackdone,FALSE,FALSE
+1Dg4dFJr3HW7sbA7vPejre,2017-11-18 19:58:35,android,163600,Eight Days A Week - Remastered 2009,The Beatles,Beatles For Sale - Remastered,trackdone,trackdone,FALSE,FALSE
+5eAjH216cLRo2rotXPTl3S,2017-11-24 04:20:51,android,254800,Hudson,Vampire Weekend,Modern Vampires of the City,trackdone,trackdone,FALSE,FALSE
+09eg3FGzsZQbZk8qEXhJIA,2017-12-08 05:35:00,android,274773,Stop Breaking Down,The Rolling Stones,Exile On Main Street,trackdone,trackdone,TRUE,FALSE
+6MPpnJDLk37GEIM0iGGITd,2017-12-15 03:15:00,android,42143,Frosty The Snowman,Ella Fitzgerald,Christmas,clickrow,endplay,FALSE,FALSE
+4gC95tJcg0TWAz3LJ2dZpN,2017-12-21 23:24:15,android,193980,Greensleeves,Coleman Hawkins,Soul,trackdone,trackdone,TRUE,FALSE
+1RMDXedcRno6rDBCbNHDJf,2017-12-29 22:25:51,android,171086,Santa Claus Is Coming to Town,Michael Bublé,Christmas,appload,trackdone,TRUE,FALSE
+0wVluBsVAVzBKrqspuCcwR,2018-01-07 22:47:57,android,0,"Check Yes, Juliet",We The Kings,We The Kings,appload,fwdbtn,TRUE,FALSE
+3cual6JOG286qZJmCxKRAT,2018-01-18 06:39:07,android,4861,Tinker Tailor Soldier Sailor Rich Man Poor Man Beggar Man Thief,Radiohead,A Moon Shaped Pool,fwdbtn,fwdbtn,TRUE,FALSE
+2AgGrIlHCefGlbMTJh5idM,2018-01-20 00:41:43,android,6176,Notion,Kings of Leon,Only By The Night,fwdbtn,fwdbtn,TRUE,FALSE
+0lP4HYLmvowOKdsQ7CVkuq,2018-01-24 03:30:16,android,231533,The Kill,Thirty Seconds To Mars,A Beautiful Lie,trackdone,trackdone,TRUE,FALSE
+4i4oDSWluhViEzuYIZYtmJ,2018-01-27 21:10:32,android,132007,Fourth Time Around,Bob Dylan,Blonde On Blonde,trackdone,fwdbtn,TRUE,FALSE
+5HWpx5Pjj9wFROhreH612d,2018-02-02 06:30:45,android,199307,Here Come the Runts,AWOLNATION,Here Come the Runts,clickrow,trackdone,FALSE,FALSE
+7y1hMqXNa0dKQLZH7CKbUG,2018-02-10 06:31:55,android,148253,Don't Bother Me - Remastered 2009,The Beatles,With The Beatles,trackdone,trackdone,TRUE,FALSE
+0eS4rPcKiqFFlOACBs9FRU,2018-02-17 04:31:49,android,138720,I Love You,Lou Reed,Lou Reed,trackdone,trackdone,TRUE,FALSE
+0IZCh5UqgLpCHpySM7fEXD,2018-02-21 05:13:15,android,203173,Knee Deep (feat. Jimmy Buffett),Zac Brown Band,You Get What You Give,trackdone,trackdone,TRUE,FALSE
+7HUj2KB6hQCZgTPHFGAJ0c,2018-03-04 06:25:50,android,2336,All Around the World - Remastered,Oasis,Be Here Now,fwdbtn,fwdbtn,TRUE,FALSE
+3mcMy0W0x0yALTu9ezlnZa,2018-03-16 22:27:29,android,3314,Right Girl - Acoustic Version,The Maine,Black & White,fwdbtn,fwdbtn,TRUE,FALSE
+1JCCdiru7fhstOIF4N7WJC,2018-03-24 02:00:41,android,237247,Amnesia,5 Seconds of Summer,5 Seconds Of Summer,trackdone,trackdone,TRUE,FALSE
+4PwGt5dBTmdRu4HTN8ZWgR,2018-04-06 01:07:56,android,2827,Can't Deny Me,Pearl Jam,Can't Deny Me,fwdbtn,fwdbtn,FALSE,FALSE
+2zz1MxGs1oyU3uYP0QRuC0,2018-04-19 06:21:29,android,3739,Knights of Shame,AWOLNATION,Megalithic Symphony Deluxe,fwdbtn,fwdbtn,TRUE,FALSE
+6lOvZTZcacgkvmyOZkWpNk,2018-04-26 05:51:02,android,2211,Set Fire to the Rain,Adele,21,fwdbtn,fwdbtn,TRUE,FALSE
+1P5Z1wuraE6vHsr1oLlnQw,2018-05-08 13:55:20,android,68810,Out Of The Blue - Remastered 2014,George Harrison,All Things Must Pass,fwdbtn,fwdbtn,TRUE,FALSE
+1YI0uK36eupTmw9F8kHysr,2018-05-16 01:56:21,android,244866,Sunday Morning,Maroon 5,Songs About Jane,trackdone,trackdone,TRUE,FALSE
+5Wj1rJnCLpMHdLaxsFtJLs,2018-05-22 07:05:35,android,2844,Bennie And The Jets - Remastered 2014,Elton John,Goodbye Yellow Brick Road - Remastered,fwdbtn,fwdbtn,TRUE,FALSE
+7mar4DMFlVi5DwbarqP38M,2018-05-28 00:31:44,android,208698,Paper Crown,Liam Gallagher,As You Were,trackdone,trackdone,TRUE,FALSE
+4wOYt5nULk1Cu8pwJWk26m,2018-05-29 19:37:21,android,59841,Wildfire (feat. Frank Ocean),John Mayer,Paradise Valley,trackdone,fwdbtn,FALSE,FALSE
+7xRemq7GLu0Tbqe9OckG87,2018-06-08 05:15:36,android,186213,The Man in Me,Bob Dylan,New Morning,trackdone,trackdone,TRUE,FALSE
+6MqVzYyReYtY0Sgw9alj5I,2018-06-13 07:54:06,android,210420,Say You Like Me,We The Kings,Sunshine State of Mind,trackdone,trackdone,TRUE,FALSE
+2ctvdKmETyOzPb2GiJJT53,2018-06-16 01:27:23,android,169534,Breathe (In the Air),Pink Floyd,The Dark Side of the Moon,trackdone,trackdone,TRUE,FALSE
+4xHkj5OuwbhJ3VhbW09Xxt,2018-07-02 05:21:30,android,2527,A Escondidas,Lucah,Voy a Ti,fwdbtn,fwdbtn,TRUE,FALSE
+66YHxyGAUGjMBDdrDlWIMD,2018-07-17 05:51:33,android,2313,One of My Turns,Pink Floyd,The Wall,fwdbtn,fwdbtn,TRUE,FALSE
+0tgVpDi06FyKpA1z0VMD4v,2018-07-23 00:23:30,android,263400,Perfect,Ed Sheeran,÷,fwdbtn,trackdone,TRUE,FALSE
+3gy3pz80G5bBYUHyucUOx3,2018-08-05 21:12:44,android,0,Llamarada,Luis Miguel,Llamarada,appload,endplay,TRUE,FALSE
+25nzKGDiua1lE9Qo5V19GL,2018-08-13 05:46:50,android,1736,Young Blood,The Naked And Famous,"Passive Me, Aggressive You",fwdbtn,fwdbtn,TRUE,FALSE
+0ZWx7ufdJqDscO8aXC0QX6,2018-08-20 00:39:47,android,4184,Let It Rain,Zac Brown Band,"The Grohl Sessions, Vol. 1",fwdbtn,fwdbtn,TRUE,FALSE
+1qOIwyj41749bmOhdD09IS,2018-08-25 21:26:04,android,343032,Headlights,Eminem,The Marshall Mathers LP2,trackdone,trackdone,TRUE,FALSE
+2VsX1BoWSGiuVXGiFSUr6h,2018-08-31 05:58:39,android,27583,Maggie Mae - Remastered 2009,The Beatles,Let It Be,backbtn,fwdbtn,TRUE,FALSE
+0awvW9Pcq2skIqVOUdk5wX,2018-09-08 15:22:07,android,417831,Despite Repeated Warnings,Paul McCartney,Egypt Station,trackdone,trackdone,TRUE,FALSE
+1Q7gCIpOjIIU0bUKcGzrG4,2018-09-14 16:52:28,android,139680,I Feel Fine - Remastered 2009,The Beatles,Past Masters,trackdone,trackdone,TRUE,FALSE
+2y6mh0Q1gZC7BKThkY92bh,2018-09-19 06:13:35,android,1775,Confidante,Paul McCartney,Egypt Station,fwdbtn,fwdbtn,TRUE,FALSE
+5N8OdYEKHXwexx5YC8BlX0,2018-09-26 21:42:16,android,0,"Love Me Do - Live At The BBC For ""Pop Go The Beatles"" / 23rd July, 1963",The Beatles,Live At The BBC,appload,endplay,FALSE,FALSE
+2u2WL5N3KnQnykOZi3fxL6,2018-09-30 21:43:18,android,239001,Swallowed in the Sea,Coldplay,X&Y,clickrow,trackdone,FALSE,FALSE
+1XcKztnLHUiUC17VRAMEyc,2018-10-05 01:45:25,android,1862,Run Run Run,The Velvet Underground,The Velvet Underground & Nico 45th Anniversary,fwdbtn,fwdbtn,TRUE,FALSE
+2gTnu5RZNVFVnWdjLnyUA5,2018-10-16 04:15:36,android,203360,Nobody Home,Pink Floyd,The Wall,trackdone,trackdone,TRUE,FALSE
+5xhQChGGhKLWqBqX4XhtYE,2018-10-28 03:34:12,android,259102,Sail,AWOLNATION,Megalithic Symphony Deluxe,trackdone,trackdone,TRUE,FALSE
+26SLgIz5VmRhCMFliySqoa,2018-11-05 23:54:09,android,120933,"When It Rains, It Really Pours - 2004 DSD remaster",Elvis Presley,Elvis At Sun,trackdone,trackdone,TRUE,FALSE
+73jni6EKsiRZVoYgfej0fQ,2018-11-09 00:42:29,android,3395,Just a Memory,Train,Bulletproof Picasso,fwdbtn,fwdbtn,TRUE,FALSE
+2RvKsA6Ho7VbJkVFiD4UQF,2018-11-14 06:22:27,android,2116,Hold Me Tight - Remastered 2009,The Beatles,With The Beatles,fwdbtn,fwdbtn,TRUE,FALSE
+0HLWvLKQWpFdPhgk6ym58n,2018-11-20 18:13:57,android,175480,Who Says,John Mayer,Battle Studies,clickrow,trackdone,TRUE,FALSE
+5XRHGXut00SrJUFmcn2lQF,2018-11-24 04:21:20,android,238000,All The Right Moves,OneRepublic,Waking Up,trackdone,trackdone,TRUE,FALSE
+4P0osvTXoSYZZC2n8IFH3c,2018-11-29 19:19:07,android,857,Payphone,Maroon 5,Overexposed - Deluxe,clickrow,endplay,TRUE,FALSE
+096rnp428bZTuaiKcl7bHM,2018-12-05 01:30:12,android,50227,She's Long Gone,The Black Keys,Brothers,fwdbtn,fwdbtn,TRUE,FALSE
+1N883b1C3trjGcx2h4E99B,2018-12-11 00:26:12,android,142226,We're Going To Be Friends,The White Stripes,White Blood Cells,fwdbtn,trackdone,FALSE,FALSE
+3zT2616WcD9Df5m21OsCX0,2018-12-14 07:59:27,android,3467,Rise Up,Imagine Dragons,Evolve,fwdbtn,fwdbtn,TRUE,FALSE
+2ULL3VZf4WwBKO4vjwT7Bg,2018-12-26 01:44:07,android,32065,Sloop John B,The Beach Boys,Pet Sounds,fwdbtn,logout,TRUE,FALSE
+2dLzyrwHEEK8umYoOYaSPc,2019-01-13 00:53:11,android,66772,"I Still Miss Someone - Live at Folsom State Prison, Folsom, CA (1st Show) - January 1968",Johnny Cash,At Folsom Prison,trackdone,logout,TRUE,FALSE
+7FiJpVqkeiMHH3AzUgyJqx,2019-01-24 01:31:01,android,180760,Out Among the Stars,Johnny Cash,Out Among The Stars,trackdone,trackdone,TRUE,FALSE
+4WoSSJYm6RKcNs0ASJjqhZ,2019-02-18 14:31:41,android,197160,Somebody Told Me,The Killers,Hot Fuss,trackdone,trackdone,TRUE,FALSE
+3FQjZrrwOTiJR4oR6sYF8i,2019-03-10 20:53:53,android,199718,Ruptured,Keuning,Prismism,trackdone,trackdone,TRUE,FALSE
+2DSeCIdLFJNNhlcOXGrWIk,2019-03-27 02:38:56,android,1659,Gale Song,The Lumineers,Cleopatra,fwdbtn,fwdbtn,TRUE,FALSE
+4tnVkev96FKWFk1wLBYcJA,2019-04-04 00:47:17,android,2372,Across The Universe - Naked Version / Remastered 2013,The Beatles,Let It Be... Naked,trackdone,fwdbtn,TRUE,FALSE
+1Ib5tLTFz8teJPcxZycpj3,2019-04-06 04:05:22,android,949,Light It Up,OneRepublic,Native,fwdbtn,fwdbtn,TRUE,FALSE
+7vX5yphSQ7Drut4moiuIXv,2019-04-07 14:25:54,android,230640,Drunken Lullabies,Flogging Molly,Drunken Lullabies,trackdone,trackdone,TRUE,FALSE
+1G391cbiT3v3Cywg8T7DM1,2019-04-08 07:36:45,android,215900,Scar Tissue,Red Hot Chili Peppers,Californication,clickrow,trackdone,TRUE,FALSE
+1xa66kvw6zwboiW7c8W9t8,2019-04-13 15:54:42,android,140266,Bob Dylan's Blues,Bob Dylan,The Freewheelin' Bob Dylan,trackdone,trackdone,FALSE,FALSE
+3jy5qC35tadeX65WWvAS1M,2019-04-26 04:12:25,android,219106,One Of These Days - Remastered 2011,Paul McCartney,McCartney II,trackdone,trackdone,FALSE,FALSE
+0WC8V7XiGrrF4N8LqELOKM,2019-06-02 04:57:18,android,156493,Paloma Querida,José Alfredo Jimenez,Las 100 Clasicas Vol. 1,clickrow,trackdone,FALSE,FALSE
+121AmMmQnBWZh8HNjZwuK6,2019-06-26 20:08:45,android,154848,Get Back - Naked Version / Remastered 2013,The Beatles,Let It Be... Naked,trackdone,trackdone,TRUE,FALSE
+4D40ZlFAWsvX7lua1Kablh,2019-06-29 21:21:12,android,2730,Jet - 2010 Remaster,Paul McCartney,Band On The Run,fwdbtn,fwdbtn,TRUE,FALSE
+0awvW9Pcq2skIqVOUdk5wX,2019-07-03 14:33:33,android,1175,Despite Repeated Warnings,Paul McCartney,Egypt Station,fwdbtn,fwdbtn,TRUE,FALSE
+4JuNZM2OZOVXVaQfjudLa3,2019-07-10 13:15:27,android,183837,Me Equivoqué Contigo,José Alfredo Jimenez,Sus Grandes Corridos y Rancheras,trackdone,trackdone,TRUE,FALSE
+55e99bv2wlgTYtNEYHWtN1,2019-07-15 21:47:32,android,63397,Sheep,Pink Floyd,Animals,trackdone,fwdbtn,TRUE,FALSE
+3NLrRZoMF0Lx6zTlYqeIo4,2019-07-18 14:47:12,android,10536,Here Without You,3 Doors Down,Away From The Sun,trackdone,fwdbtn,TRUE,FALSE
+3KB1Z1mQulL4SdJTmrbTyO,2019-07-25 16:27:27,android,134533,Get Rhythm,Johnny Cash,Get Rhythm,trackdone,trackdone,TRUE,FALSE
+3RgR3cFZ6xh7MlB9DURK6e,2019-08-05 13:40:32,android,228173,Shadow Days,John Mayer,Born and Raised,trackdone,trackdone,TRUE,FALSE
+0nNI8eyMjDGjPDuQq87aJb,2019-08-08 03:52:38,android,166173,Why Don't You Write Me,Simon & Garfunkel,Bridge Over Troubled Water,fwdbtn,trackdone,TRUE,FALSE
+25ZAibhr3bdlMCLmubZDVt,2019-08-11 03:50:22,android,222346,QUE PRETENDES,J Balvin,OASIS,trackdone,trackdone,FALSE,FALSE
+3nbcin8kl89hboxQBKaLR0,2019-08-13 22:14:25,android,50387,"Manon Lescaut / Act II: ""In quelle trine morbide""",Giacomo Puccini,Verismo,fwdbtn,fwdbtn,TRUE,FALSE
+1HNywa8Bk0TmzRwQrzhtPo,2019-08-20 15:07:30,android,285480,I Guess I Just Feel Like,John Mayer,I Guess I Just Feel Like,clickrow,trackdone,TRUE,FALSE
+0qHMhBZqYb99yhX9BHcIkV,2019-08-22 23:58:11,android,773,Magical Mystery Tour - Remastered 2009,The Beatles,Magical Mystery Tour,fwdbtn,fwdbtn,TRUE,FALSE
+32fDz5sQmtuqukL5sYi4Yk,2019-08-30 16:25:56,android,20046,Best That I Can,Vance Joy,Dream Your Life Away,trackdone,fwdbtn,TRUE,FALSE
+2u6fRGcaBhpI4uNBHpGv0b,2019-09-05 00:13:46,android,220873,Hallelujah,Rufus Wainwright,Vibrate: The Best Of,trackdone,logout,TRUE,FALSE
+6txGFpco4cfgG1sA1MxLCp,2019-09-16 20:33:14,android,748,From a Buick 6,Bob Dylan,Highway 61 Revisited,fwdbtn,fwdbtn,TRUE,FALSE
+5zUWCFqhg2wU9Fr3H3XEjv,2019-09-19 12:44:39,android,143640,Stay Open,Maya Hawke,To Love a Boy / Stay Open,trackdone,trackdone,FALSE,FALSE
+2RttW7RAu5nOAfq6YFvApB,2019-09-21 10:02:26,android,12043,Happier,Ed Sheeran,÷,playbtn,endplay,TRUE,FALSE
+2jtUGFsqanQ82zqDlhiKIp,2019-10-01 01:01:35,android,118626,She Came In Through The Bathroom Window - Remastered 2009,The Beatles,Abbey Road,fwdbtn,trackdone,TRUE,FALSE
+2DATcVxBdGcIIGd0sb1s4X,2019-10-06 07:32:49,android,3790,"Don Giovanni, ossia Il dissoluto punito, K.527 / Act 1: ""Là ci darem la mano""",Wolfgang Amadeus Mozart,Mozart: Don Giovanni,clickrow,endplay,FALSE,FALSE
+1Qa0Y05al633fG8f9Peytc,2019-10-07 21:20:59,android,1757,Maybe I’m Amazed - Remastered 2011,Paul McCartney,McCartney,fwdbtn,fwdbtn,TRUE,FALSE
+2I01J8QOqx2mGGOQAXIvuE,2019-10-10 05:03:37,android,0,Projection For Two,Ennio Morricone,Cinema Paradiso,fwdbtn,fwdbtn,FALSE,FALSE
+1lUXBhmQYL8k0YkPVV6j6I,2019-10-11 23:24:33,android,355,Hear Your Heart,James Bay,Chaos And The Calm,fwdbtn,fwdbtn,TRUE,FALSE
+6Hmj7SrLRbreLVfVS7mV1S,2019-10-15 16:14:17,android,1133,Wake Up,Arcade Fire,Funeral,fwdbtn,fwdbtn,TRUE,FALSE
+3QEWEv1tvHmVgsT5THpGDn,2019-10-19 19:38:39,android,922,Don't Leave Me Now,Pink Floyd,The Wall,fwdbtn,fwdbtn,TRUE,FALSE
+5kxVyCgEUND7E2QKG7JmoF,2019-10-22 17:02:00,android,740,Teddy Picker,Arctic Monkeys,Favourite Worst Nightmare,fwdbtn,fwdbtn,TRUE,FALSE
+4DPQvbgSM0IdX4O3HOACwL,2019-10-25 22:34:17,android,48471,Treefingers,Radiohead,Kid A,trackdone,unexpected-exit-while-paused,FALSE,FALSE
+0AOnpRWH1YSIjOP8g5fFLw,2019-10-30 16:29:35,android,2510,Down by the Seaside - 1993 Remaster,Led Zeppelin,Physical Graffiti,backbtn,fwdbtn,TRUE,FALSE
+7mQpHyD51jOr6zouLaFbZy,2019-11-03 18:30:44,android,178466,Cinema Paradiso,Ennio Morricone,Cinema Paradiso,trackdone,trackdone,TRUE,FALSE
+0pqSEV47UwxAQr6ukAavfO,2019-11-06 01:26:20,android,530,All These Things That I've Done - Live From The Royal Albert Hall / 2009,The Killers,Live From The Royal Albert Hall,fwdbtn,fwdbtn,TRUE,FALSE
+5imShWWzwqfAJ9gXFpGAQh,2019-11-07 03:39:03,android,0,Waiting On the World to Change,John Mayer,Continuum,trackdone,unexpected-exit-while-paused,TRUE,FALSE
+0PeOaoVC3D2rIquPiraCVm,2019-11-11 16:54:40,android,301600,Prismism,Keuning,Prismism,trackdone,trackdone,TRUE,FALSE
+0U6h6BIv3HKpkp3ZKH9wCk,2019-11-14 07:35:13,android,178,Back In Brazil,Paul McCartney,Egypt Station,fwdbtn,fwdbtn,TRUE,FALSE
+1yKQBy7olMIqRpziyAzf8c,2019-11-23 01:46:07,android,227933,Working Class Hero - Remastered 2010,John Lennon,Plastic Ono Band,fwdbtn,trackdone,TRUE,FALSE
+5fSDXbY8o9pA3TKwAbfwML,2019-11-28 06:44:16,android,1197,Mi Primer Millon,Bacilos,Caraluna,fwdbtn,fwdbtn,TRUE,FALSE
+7EUcOIbJSePmXGvAe7G79C,2019-12-10 05:23:55,android,217440,Black Treacle,Arctic Monkeys,Suck It and See,trackdone,trackdone,TRUE,FALSE
+7wMaLtWGYFmzWdKNi5daj5,2019-12-21 22:09:00,android,219093,Walk and Talk It,Lou Reed,Lou Reed,trackdone,trackdone,TRUE,FALSE
+4b9bcST8vgGsTcuog61NHE,2019-12-30 15:50:28,android,269192,Me Voy a Tomar la Noche (Choster + Bzars Remix),Los Claxons,Me Voy a Tomar la Noche (Choster + Bzars Remix),clickrow,trackdone,TRUE,FALSE
+0INUNNYfsp4qr6kJdY46mY,2020-01-07 02:37:44,android,127493,Travelin' Band,Creedence Clearwater Revival,Cosmo's Factory,trackdone,trackdone,TRUE,FALSE
+6wfK1R6FoLpmUA9lk5ll4T,2020-01-21 05:40:13,android,1507,Please Mister Postman - Remastered 2009,The Beatles,With The Beatles,fwdbtn,fwdbtn,TRUE,FALSE
+6Tvzf3VEi16JMhAgOwdt2y,2020-01-24 01:06:48,android,219440,Birds,Imagine Dragons,Origins,backbtn,trackdone,TRUE,FALSE
+68KdvPllp9Pug8ZG6AByFY,2020-01-30 00:27:22,android,581066,"Gravity - Live at the Nokia Theatre, Los Angeles, CA - December 2007",John Mayer,Where the Light Is: John Mayer Live In Los Angeles,trackdone,trackdone,TRUE,FALSE
+7J06GPr8b6A0zRHTZhah6s,2020-02-07 02:42:14,android,229280,Highway 20 Ride,Zac Brown Band,The Foundation,fwdbtn,trackdone,TRUE,FALSE
+1OJkKHmXsZVKtWlECdpDAe,2020-02-22 06:59:57,android,1459,Sé Que Te Duele,Alejandro Fernández,Rompiendo Fronteras,fwdbtn,fwdbtn,TRUE,FALSE
+1N62wozuHCvczCkY4QidpP,2020-02-29 02:35:14,android,1326,Over My Head (Cable Car),The Fray,How To Save A Life,fwdbtn,fwdbtn,TRUE,FALSE
+5G1sTBGbZT5o4PNRc75RKI,2020-03-01 01:49:22,android,0,Lonely Boy,The Black Keys,El Camino,fwdbtn,fwdbtn,TRUE,FALSE
+4SBHuF59wYA32i3O1Yfv1L,2020-03-09 19:11:00,web player,197745,I Love Penny Sue,Daniel May,Midnight in Paris (Music from the Motion Picture),trackdone,trackdone,FALSE,FALSE
+2b8fOow8UzyDFAE27YhOZM,2020-03-16 16:12:07,cast to device,70359,Memories,Maroon 5,Memories,clickrow,endplay,FALSE,FALSE
+2VZ3ibuhicmovAqEMIFdJW,2020-03-19 23:14:11,cast to device,218894,This Is Your Life,The Killers,Day & Age - Bonus Tracks,trackdone,trackdone,FALSE,FALSE
+2aZ2Co4NeQRsqWcU930zHT,2020-03-25 21:44:12,android,6280,Shot At The Night,The Killers,Direct Hits,clickrow,remote,FALSE,FALSE
+70wYA8oYHoMzhRRkARoMhU,2020-03-31 17:45:24,cast to device,219985,When You Were Young,The Killers,Sam's Town,trackdone,trackdone,FALSE,FALSE
+5y2KMaT44umaDJWXJHcYjN,2020-04-03 17:25:48,android,17767,Do You Hear the People Sing?,Les Misérables - 10th Anniversary Concert Cast,Les Misérables (In Concert at the Royal Albert Hall),playbtn,remote,TRUE,FALSE
+1RywwImkBFUEVcRTBmw7vL,2020-04-09 13:50:01,cast to device,157610,The Age of Worry,John Mayer,Born and Raised,trackdone,trackdone,FALSE,FALSE
+2u2WL5N3KnQnykOZi3fxL6,2020-04-13 15:09:16,cast to device,238995,Swallowed in the Sea,Coldplay,X&Y,clickrow,trackdone,FALSE,FALSE
+0KogQrSowDnZoU8GSpaxkj,2020-04-15 14:44:59,cast to device,106400,Little Child - Remastered 2009,The Beatles,With The Beatles,trackdone,trackdone,FALSE,FALSE
+7nemcVsXVFZF01iqpIIo2Y,2020-04-19 22:30:17,android,301226,It's a Long Way to the Top (If You Wanna Rock 'N' Roll),AC/DC,High Voltage,trackdone,trackdone,TRUE,FALSE
+1hB8pAcdgVzSLbnFMYXKOc,2020-04-24 15:17:36,cast to device,195734,"Battered, Black & Blue (Hole In My Heart)",AWOLNATION,Angel Miners & The Lightning Riders,trackdone,trackdone,FALSE,FALSE
+37jTPJgwCCmIGMPB45jrPV,2020-04-28 21:08:02,cast to device,338414,Holy Grail,JAY-Z,Magna Carta... Holy Grail,trackdone,trackdone,FALSE,FALSE
+7BVwi9cIzSc6tpyxsp47vJ,2020-05-03 06:28:35,android,223640,Mess Is Mine,Vance Joy,Dream Your Life Away,fwdbtn,trackdone,TRUE,FALSE
+5MLjVCMjJKwXLk6JmPeOPe,2020-05-11 06:23:35,android,1563,Best Part of Me (feat. YEBBA),Ed Sheeran,No.6 Collaborations Project,fwdbtn,fwdbtn,TRUE,FALSE
+3lSi6qfnp2YZazTzcOLBZk,2020-05-19 13:40:36,cast to device,144187,I'll Be Back - Remastered 2009,The Beatles,A Hard Day's Night,trackdone,trackdone,FALSE,FALSE
+6A9mKXlFRPMPem6ygQSt7z,2020-05-22 17:57:10,cast to device,179993,Three Little Birds,Bob Marley & The Wailers,Exodus,trackdone,trackdone,FALSE,FALSE
+1UMoEbjcFhtSwZUNo2MK4y,2020-05-30 04:49:42,android,800,Mrs. Vandebilt - 2010 Remaster,Paul McCartney,Band On The Run,fwdbtn,fwdbtn,TRUE,FALSE
+1t4wa5r7E7oZ2D4G07JFsI,2020-06-01 22:21:31,cast to device,223316,The Best,AWOLNATION,Angel Miners & The Lightning Riders,trackdone,trackdone,FALSE,FALSE
+1tTV7mRV9uB2Nr9VcwkuFX,2020-06-05 16:01:14,cast to device,76876,Greek Tragedy,The Wombats,Glitterbug,trackdone,fwdbtn,FALSE,FALSE
+3YvSaCeNvGlFzIU1cFC5mG,2020-06-08 00:08:34,android,0,Crawl,Kings of Leon,Only By The Night,fwdbtn,fwdbtn,TRUE,FALSE
+3KfbEIOC7YIv90FIfNSZpo,2020-06-14 05:27:28,android,146333,In My Life - Remastered 2009,The Beatles,Rubber Soul,playbtn,trackdone,TRUE,FALSE
+4mtracN0MNSzOGPHod4yIi,2020-06-20 22:42:03,android,60016,My Own Soul’s Warning,The Killers,My Own Soul's Warning,clickrow,unexpected-exit,FALSE,FALSE
+7DmiHaP1MxL9i1p0kHhXq2,2020-06-28 20:25:19,android,300973,Wasted Time,Vance Joy,Dream Your Life Away,trackdone,trackdone,TRUE,FALSE
+2ZltjIqztEpZtafc8w0I9t,2020-07-23 03:55:24,android,234197,3005,Childish Gambino,Because the Internet,trackdone,trackdone,FALSE,FALSE
+4dPKQxaraW6CG1rTBzV6DW,2020-07-29 20:02:10,android,276426,My Iron Lung,Radiohead,The Bends,trackdone,trackdone,TRUE,FALSE
+1SCXzqKZdif5b33POmzwI4,2020-08-03 00:57:37,android,3192,Angel Of Small Death & The Codeine Scene,Hozier,Hozier,fwdbtn,fwdbtn,TRUE,FALSE
+1hgvykolO4kBIEozATmpyj,2020-08-12 22:37:33,android,1103,If I Fell - Remastered 2009,The Beatles,A Hard Day's Night,fwdbtn,fwdbtn,TRUE,FALSE
+2NiKqnDaUJHq8l67t4509u,2020-08-15 13:39:39,android,239333,Flesh And Bone,The Killers,Battle Born,trackdone,trackdone,TRUE,FALSE
+2wKeVnM8OBoGjGm8Qvqhi5,2020-08-15 22:58:52,android,885,Cigarettes & Alcohol - 2014 Remaster,Oasis,Definitely Maybe,fwdbtn,fwdbtn,TRUE,FALSE
+48JM82SHQTBYkhEYhMaOaa,2020-08-17 01:44:01,android,940,She Loves You - Remastered 2009,The Beatles,Past Masters,fwdbtn,fwdbtn,TRUE,FALSE
+4etypRtRn8IgsxZu6BhRS6,2020-08-19 14:24:23,android,1216,Someone Like You,Adele,21,fwdbtn,fwdbtn,TRUE,FALSE
+1ChiuzvTurrCFwL1GxxUaW,2020-08-22 13:27:29,android,258266,Lightning Fields (feat. k.d. lang),The Killers,Imploding The Mirage,trackdone,trackdone,FALSE,FALSE
+7d3HsxVBxNWx8Q3G5UuHos,2020-08-27 03:05:34,android,218906,My God (feat. Weyes Blood),The Killers,Imploding The Mirage,trackdone,trackdone,FALSE,FALSE
+4SBHuF59wYA32i3O1Yfv1L,2020-08-31 20:12:19,android,197906,I Love Penny Sue,Daniel May,Midnight in Paris (Music from the Motion Picture),trackdone,trackdone,TRUE,FALSE
+1dJfLFVyvODCdX9sRHhTMN,2020-09-02 23:42:14,android,101635,American Bohemian - Gatlinburg Demo,Houndmouth,California Voodoo,clickrow,unexpected-exit-while-paused,TRUE,FALSE
+1NgvIjkEjkhcIR1pp5Qsir,2020-09-04 15:53:07,android,470,In Limbo,Radiohead,Kid A,fwdbtn,fwdbtn,TRUE,FALSE
+6FaWmDKVlCHA5URv6YtXVI,2020-09-07 16:42:11,android,68306,Claudia's Theme - Version Seven,Lennie Niehaus,Unforgiven - Original Motion Picture Soundtrack,trackdone,trackdone,TRUE,FALSE
+6yjKlmm7vOszkXEUku1EM1,2020-09-11 00:48:46,android,24254,New York State of Mind,Billy Joel,Turnstiles,fwdbtn,fwdbtn,TRUE,FALSE
+56lhDZNQ5J47aog6mGKeGk,2020-09-13 04:54:48,android,288720,Thunder Road,Bruce Springsteen,Born To Run,trackdone,trackdone,TRUE,FALSE
+6ZOBP3NvffbU4SZcrnt1k6,2020-09-16 09:04:14,android,14207,Kryptonite,3 Doors Down,The Better Life,trackdone,fwdbtn,TRUE,FALSE
+3Q2tKt6gKdn9LUMcHFxNJy,2020-09-22 01:00:19,android,234693,Raging Fire,Phillip Phillips,Behind The Light,trackdone,trackdone,TRUE,FALSE
+5zhfggnBHJA2iJAnBWYsau,2020-09-24 00:36:26,android,1542,What Kind of Fool Am I,Sammy Davis Jr.,I've Gotta Be Me: The Best Of Sammy Davis Jr.,fwdbtn,fwdbtn,TRUE,FALSE
+2x8evxqUlF0eRabbW2JBJd,2020-09-28 03:23:27,android,716,Fluorescent Adolescent,Arctic Monkeys,Favourite Worst Nightmare,fwdbtn,fwdbtn,TRUE,FALSE
+3k7JQg9M5rZJHveFYq0y9J,2020-10-01 17:37:54,android,234880,Holy Mountain,Noel Gallagher's High Flying Birds,Holy Mountain,fwdbtn,trackdone,TRUE,FALSE
+3NrAMPb3hlWCmw9kepqBmM,2020-10-06 14:51:19,android,95070,Mischief Managed!,John Williams,Harry Potter and the Prisoner of Azkaban / Original Motion Picture Soundtrack,clickrow,endplay,FALSE,FALSE
+6Vcwr9tb3ZLO63F8DL8cqu,2020-10-08 18:13:57,android,341626,Tangled up in Blue,Bob Dylan,Blood On The Tracks,trackdone,trackdone,TRUE,FALSE
+12VWzyPDBCc8fqeWCAfNwR,2020-10-09 17:10:30,android,484,One Dance,Drake,Views,fwdbtn,fwdbtn,TRUE,FALSE
+1p50TN8eyDm3mJHZVgcTxm,2020-10-11 21:57:00,android,23,Au Revoir,OneRepublic,Native,fwdbtn,fwdbtn,TRUE,FALSE
+6pbAfIcd0IQXTE3a3LHURA,2020-10-14 16:14:20,android,167400,The Norwegian Ridgeback and a Change of Season,John Williams,Harry Potter and The Sorcerer's Stone Original Motion Picture Soundtrack,trackdone,trackdone,TRUE,FALSE
+2u6fRGcaBhpI4uNBHpGv0b,2020-10-15 20:32:23,android,1891,Hallelujah,Rufus Wainwright,Vibrate: The Best Of,fwdbtn,fwdbtn,TRUE,FALSE
+0c4IEciLCDdXEhhKxj4ThA,2020-10-17 21:41:57,android,1691,Madness,Muse,The 2nd Law,fwdbtn,fwdbtn,TRUE,FALSE
+1dbQNSAXlOEtngcIZAOfPO,2020-10-22 17:48:41,android,135973,Buddy,Willie Nelson,Good Times,trackdone,trackdone,TRUE,FALSE
+52rWZajfmiprmZklqkpXAR,2020-10-26 07:57:13,android,170840,Wanted Man,Johnny Cash,Little Fauss and Big Halsy (Original Soundtrack Recording),trackdone,trackdone,TRUE,FALSE
+72XWsiLW8q2g8Lv0a010ha,2020-10-28 16:00:11,android,206520,The Great Escape,BOYS LIKE GIRLS,Boys Like Girls,trackdone,trackdone,TRUE,FALSE
+09e3onHcCEizlM8IW0t5ff,2020-11-01 22:16:02,android,330586,The Great Eye,Howard Shore,The Lord of the Rings: The Fellowship of the Ring - the Complete Recordings,trackdone,trackdone,FALSE,FALSE
+07dcoHmvDST7SAUH0sdEjR,2020-11-05 19:19:39,android,16063,Getting Rid of Britta,Chevy Chase,Community (Music from the Original Television Series),clickrow,endplay,FALSE,FALSE
+3uNcNOaxl0cvfiYhWnZe6x,2020-11-09 05:35:47,android,1120,Honey Slider,Houndmouth,Little Neon Limelight,appload,logout,FALSE,FALSE
+1XsS266JiQtoqqLdlgD17V,2020-11-12 05:09:10,android,293506,Miss Atomic Bomb,The Killers,Battle Born,trackdone,trackdone,TRUE,FALSE
+3tGhRLgcCP6SIZU3tbGl7l,2020-11-15 20:25:47,android,149240,Got To Get You Into My Life - Remastered 2009,The Beatles,Revolver,trackdone,trackdone,TRUE,FALSE
+7vMCInGW1N1uTFC1LoklEM,2020-11-17 02:14:29,android,198653,Old Brown Shoe - Remastered 2009,The Beatles,Past Masters,trackdone,trackdone,TRUE,FALSE
+4FWsv3g7UvwGn8PHpCbePQ,2020-11-18 22:12:12,android,573,Ten Cent Pistol,The Black Keys,Brothers,fwdbtn,fwdbtn,TRUE,FALSE
+5BhMoGrz5KzG2fA5uzHjZ1,2020-11-20 21:08:16,android,198862,Don't Let Me Down - Naked Version / Remastered 2013,The Beatles,Let It Be... Naked,trackdone,trackdone,TRUE,FALSE
+29Xdknl9fhRsV0oOYyQOKy,2020-11-23 17:35:42,android,131440,You're the One,The Vogues,The Vogues,clickrow,trackdone,TRUE,FALSE
+0JNZGIavoUrdup1NsgJOQs,2020-11-25 23:41:39,android,3335,Alabama Song (Whisky Bar),The Doors,The Doors,trackdone,fwdbtn,TRUE,FALSE
+08TyPDbQ14NOoOWh13WJ2Z,2020-11-30 19:15:27,android,740,Absolutely Sweet Marie,Bob Dylan,Blonde On Blonde,fwdbtn,fwdbtn,TRUE,FALSE
+6WEBwvsmpaoGxka0tSh5a7,2020-12-04 23:35:20,android,1486,Won't Go Home Without You,Maroon 5,It Won't Be Soon Before Long,trackdone,fwdbtn,TRUE,FALSE
+6EThJr4Dq1Y93JspecGU2F,2020-12-09 22:55:19,android,208765,Cigarette Daydreams,Cage The Elephant,Melophobia,trackdone,trackdone,FALSE,FALSE
+0x2wtJbtJrox3SDmnMj97x,2020-12-11 18:34:07,android,270,Gimme Three Steps,Lynyrd Skynyrd,Pronounced' Leh-'Nerd 'Skin-'Nerd,fwdbtn,fwdbtn,TRUE,FALSE
+78MXICbE7bD4cuPKFh1EFO,2020-12-13 00:48:21,android,902,Celebration Day - Remaster,Led Zeppelin,Led Zeppelin III,fwdbtn,fwdbtn,TRUE,FALSE
+6Oi0qvf8bhPMdlmbfxBpYy,2020-12-15 00:45:57,android,1760,All This Music Must Fade,The Who,WHO,fwdbtn,fwdbtn,TRUE,FALSE
+7xRemq7GLu0Tbqe9OckG87,2020-12-19 07:43:12,android,186213,The Man in Me,Bob Dylan,New Morning,trackdone,trackdone,TRUE,FALSE
+0hmxVkpxbcdHAXUoZ7DeCQ,2020-12-21 01:25:42,android,296938,Did My Best,The Voidz,Did My Best,clickrow,trackdone,FALSE,FALSE
+13lZDbwonGhOflQLQIfdtZ,2020-12-26 21:48:45,android,593,We're Going to Be Friends,The White Stripes,White Blood Cells,appload,fwdbtn,TRUE,FALSE
+6yl8Es1tCYD9WdSkeVLFw4,2021-01-04 19:45:32,android,210880,You Shook Me All Night Long,AC/DC,Who Made Who,trackdone,trackdone,TRUE,FALSE
+1d7IQjawp6lLUcbarurQ31,2021-01-08 01:24:26,android,1090,(I Can't Get No) Satisfaction - Mono Version,The Rolling Stones,Out Of Our Heads,fwdbtn,fwdbtn,TRUE,FALSE
+1XxRYmDKuABtbtCozx3pA2,2021-01-12 00:39:08,android,0,Me & Magdalena,The Monkees,Good Times!,backbtn,backbtn,TRUE,FALSE
+7wDqHhtRkP1TXSlZK0sEQH,2021-01-14 20:06:34,android,46,Guiding Light,Mumford & Sons,Guiding Light,clickrow,endplay,FALSE,FALSE
+4yBxXm4dDL00YGdO5G9ubK,2021-01-17 00:16:01,android,160501,Sit Around And Miss You,The Black Keys,"""Let's Rock""",trackdone,trackdone,TRUE,FALSE
+62AuGbAkt8Ox2IrFFb8GKV,2021-01-21 00:17:47,android,203573,Sweet Caroline,Neil Diamond,Sweet Caroline,trackdone,trackdone,FALSE,FALSE
+1UH4viviUjZnS9aWgPGrk0,2021-01-26 18:20:12,android,204400,La vie en rose - Single Version,Louis Armstrong,The Best Of The Decca Years Volume One: The Singer,trackdone,trackdone,TRUE,FALSE
+4ErQ9so16QNxy0srB7vJE7,2021-01-29 00:26:44,android,169880,Gianni Schicchi: O mio babbino caro,Giacomo Puccini,Opera Chill & Relax,trackdone,trackdone,FALSE,FALSE
+6RMZQm0MRP8qkRKTnzyYWB,2021-01-31 03:26:47,android,262386,Unfamiliar Sun,Twin Peaks,Lookout Low,trackdone,trackdone,FALSE,FALSE
+21s2FWRApO7LxvhunUoPNm,2021-02-03 12:58:36,android,66822,My Mind,Skegss,My Own Mess,appload,endplay,FALSE,FALSE
+3gwRWIbr5ycEVLIAXrWaw7,2021-02-10 01:37:50,android,217560,I've Got A Feeling - Remastered 2009,The Beatles,Let It Be,trackdone,trackdone,FALSE,FALSE
+5s65w9U1L2saKk4z8SF4Zr,2021-02-17 17:39:40,android,209453,Blowback - Acoustic,The Killers,Imploding The Mirage - Deluxe,trackdone,trackdone,FALSE,FALSE
+5ygQD0fcj0vRGx9KUBENtT,2021-02-20 00:24:22,android,1572,The Wind Cries Mary,Jimi Hendrix,Are You Experienced,fwdbtn,fwdbtn,TRUE,FALSE
+3LhjNv5iXXelvLVxn1s5Di,2021-02-21 20:15:56,android,23,Man We Was Lonely - Remastered 2011,Paul McCartney,McCartney,fwdbtn,fwdbtn,TRUE,FALSE
+5n0CTysih20NYdT2S0Wpe8,2021-02-23 23:19:43,android,225973,Trouble,Cage The Elephant,Tell Me I'm Pretty,trackdone,trackdone,TRUE,FALSE
+0BSGaoMiJ5gTho2V1pLkDF,2021-03-01 23:42:19,android,289213,A Most Disgusting Song,Rodríguez,Coming From Reality,trackdone,trackdone,TRUE,FALSE
+7aYBo6hxjhJc8ECkbKAqnR,2021-03-05 20:10:00,android,250962,The Bandit,Kings of Leon,When You See Yourself,clickrow,trackdone,FALSE,FALSE
+7ykaUgkdQWJLsMuOymTV2A,2021-03-09 17:19:43,android,210720,If Not For You - Remastered 2014,George Harrison,All Things Must Pass,trackdone,trackdone,TRUE,FALSE
+3QEWEv1tvHmVgsT5THpGDn,2021-03-16 13:58:07,android,255934,Don't Leave Me Now,Pink Floyd,The Wall,trackdone,trackdone,FALSE,FALSE
+3gCYle76USfbHa7VDTDg5V,2021-03-23 02:59:42,android,23,The Kiss Of Venus (Dominic Fike),Paul McCartney,The Kiss Of Venus (Dominic Fike),clickrow,endplay,FALSE,FALSE
+2ite9c2oq2zsxP3NGCYLxq,2021-03-29 19:12:11,android,179232,Stubborn Love,The Lumineers,The Lumineers,trackdone,fwdbtn,TRUE,FALSE
+4SBc2Pkh8tVSecrkLtCAXR,2021-04-06 23:50:42,android,948,White Blank Page,Mumford & Sons,Sigh No More,fwdbtn,fwdbtn,TRUE,FALSE
+5XOzpTZGe4onY74BFK0ziS,2021-04-11 23:55:57,android,3579,I Wonder Why,Kacy & Clayton,Plastic Bouquet,backbtn,fwdbtn,TRUE,FALSE
+0zo4T5c5VV42554ySEc5J6,2021-04-15 23:23:25,android,995,Gotta Get Away,The Black Keys,Turn Blue,fwdbtn,fwdbtn,TRUE,FALSE
+3kKb3U3a8jmUJQB9ypE1Jl,2021-04-17 03:43:10,android,343,Under Control,The Strokes,Room On Fire,fwdbtn,fwdbtn,TRUE,FALSE
+0c89GbbUO3degznx9eYrq0,2021-04-20 11:12:24,android,223120,Once Upon a Time in the West - Main Theme,Ennio Morricone,Once Upon a Time in the West (Original Motion Picture Soundtrack),trackdone,trackdone,FALSE,FALSE
+6NJQpFNkDCMaRBogIi9sOI,2021-04-21 04:12:57,android,317986,Bellbottoms,The Jon Spencer Blues Explosion,Orange,trackdone,trackdone,TRUE,FALSE
+7lXOqE38eCr979gp27O5wr,2021-04-23 15:55:10,android,3289,If I Knew,Bruno Mars,Unorthodox Jukebox,fwdbtn,fwdbtn,TRUE,FALSE
+0NdTUS4UiNYCNn5FgVqKQY,2021-04-24 19:32:25,android,6211,Snap Out Of It,Arctic Monkeys,AM,fwdbtn,endplay,TRUE,FALSE
+1vQxicuNSODoBECPMFjHMG,2021-04-28 01:11:07,android,199586,Handle With Care,Traveling Wilburys,"The Traveling Wilburys, Vol. 1",trackdone,trackdone,FALSE,FALSE
+1T7vfOtlLKBDSYu71LxJYR,2021-05-01 20:35:12,android,370880,Ella,Pedro Infante,Pedro Infante - Concierto Homenaje,appload,trackdone,TRUE,FALSE
+4y4spB9m0Q6026KfkAvy9Q,2021-05-07 02:36:15,android,910,Lonely (with benny blanco),Justin Bieber,Lonely (with benny blanco),fwdbtn,fwdbtn,TRUE,FALSE
+0HEKDQsIItk1i2NKVgNroy,2021-05-10 01:42:57,android,215026,It's Not Over,Daughtry,Daughtry,trackdone,trackdone,TRUE,FALSE
+3OpoDVx3Ct42RM68Bvffvy,2021-05-12 00:28:12,android,887,In Our Prime,The Black Keys,Turn Blue,fwdbtn,fwdbtn,TRUE,FALSE
+4zoQ3EqopTIGmK2c2rPV5t,2021-05-19 20:55:01,android,1291,Cause We've Ended as Lovers,Jeff Beck,Blow By Blow,playbtn,endplay,TRUE,FALSE
+5FPnjikbwlDMULCCCa6ZCJ,2021-05-22 02:59:34,android,890,Daughters,John Mayer,Heavier Things,fwdbtn,fwdbtn,TRUE,FALSE
+1Tq6f998LMyTCETHdPosNI,2021-05-31 02:16:40,android,219800,"Roméo et Juliette, CG 9, Act I: Ah, je veux vivre",Charles Gounod,The Art Of Renée Fleming,trackdone,trackdone,TRUE,FALSE
+55N8cxpE1QDoeaaNqUnoZ2,2021-06-03 06:29:21,android,1549,Bad Decisions,The Strokes,The New Abnormal,fwdbtn,fwdbtn,TRUE,FALSE
+5PDBekCrJHLjMINfGIsZvX,2021-06-04 17:33:49,android,143407,Nobody but Me,The Jaded Hearts Club,You've Always Been Here,trackdone,trackdone,TRUE,FALSE
+5Asz9rHr2rViBdl6pkXpoq,2021-06-09 00:42:13,android,0,Oo-De-Lally,Roger Miller,Walt Disney Records The Legacy Collection: Robin Hood,backbtn,backbtn,FALSE,FALSE
+5s6CxN0L84jNeA4pA4kbAd,2021-06-15 06:03:34,android,146133,Not in Nottingham,Theo Lawrence and The Hearts,Homemade Lemonade,backbtn,trackdone,FALSE,FALSE
+7uttm8Iurm5uK67Vr9G2Sp,2021-06-20 00:50:07,android,1353,Almost (Sweet Music),Hozier,"Wasteland, Baby!",fwdbtn,fwdbtn,TRUE,FALSE
+4iK3yOQKoby2b9gvCmUwsR,2021-06-24 19:38:26,android,203117,How Lucky,Kurt Vile,How Lucky,trackdone,trackdone,FALSE,FALSE
+3l6lmZCaZdnc90MI2BktqP,2021-06-30 07:00:23,android,23,Lost Ones,J. Cole,Cole World: The Sideline Story,fwdbtn,fwdbtn,TRUE,FALSE
+42ocGQCOT0xYtV3f5kJDsD,2021-07-03 02:39:11,android,622,Sgt. Pepper's Lonely Hearts Club Band - Reprise / Remastered 2009,The Beatles,Sgt. Pepper's Lonely Hearts Club Band,fwdbtn,fwdbtn,TRUE,FALSE
+2c4FRqXnna2YeC4lShVONV,2021-07-06 00:41:36,android,750,Call Me The Breeze,John Mayer,Paradise Valley,fwdbtn,fwdbtn,TRUE,FALSE
+0JBvtprXP2Z0LP3jmzA7Xp,2021-07-11 04:10:10,android,181306,"Baby, You're A Rich Man - Remastered 2009",The Beatles,Magical Mystery Tour,fwdbtn,trackdone,TRUE,FALSE
+4VFGpluBaU1WcquEMzhSz6,2021-07-31 22:31:42,android,252413,Wild Blue,John Mayer,Sob Rock,trackdone,trackdone,FALSE,FALSE
+3RgR3cFZ6xh7MlB9DURK6e,2021-08-07 22:28:56,android,124446,Shadow Days,John Mayer,Born and Raised,trackdone,fwdbtn,TRUE,FALSE
+0F6NRy1dhuXiRdD3VmuZVD,2021-08-14 00:13:49,android,196000,Chops,Argonaut & Wasp,STARLIGHT 99,playbtn,trackdone,TRUE,FALSE
+6GXxOycOvD7pp0F4ee6X5R,2021-08-21 02:18:03,android,203533,45,Bleachers,Take the Sadness Out of Saturday Night,trackdone,trackdone,TRUE,FALSE
+3S2dHguCWZUsq3mE1JCwOl,2021-08-24 21:14:30,android,256906,Quiet Town - Abridged,The Killers,Pressure Machine,trackdone,trackdone,FALSE,FALSE
+7lJt7vBDNUO8Mv8uELND1H,2021-08-30 04:34:58,android,369787,Sympathy For The Devil,Keith Richards,Beggars Banquet,appload,trackdone,TRUE,FALSE
+461GwTVcmJ7EENZrnPfuhW,2021-09-01 20:34:45,android,225933,For Eddy,Aliotta Haynes Jeremiah,Lake Shore Drive,trackdone,trackdone,FALSE,FALSE
+591rVlNAjjUyA44aq6PzTH,2021-09-07 19:59:30,android,207870,No Time For Toxic People,Imagine Dragons,Mercury - Act 1,trackdone,trackdone,FALSE,FALSE
+6obK7vtvAMmYSeNIiAa4Ij,2021-09-11 10:32:13,android,4933,Restless Legs,Keuning,Prismism,fwdbtn,fwdbtn,TRUE,FALSE
+2baEFuU0gQon0hgVRioI1o,2021-09-16 00:05:48,android,177133,Anna (Go To Him) - Remastered 2009,The Beatles,Please Please Me,trackdone,trackdone,TRUE,FALSE
+42ZrMq4BKsWDrrbMnMRYaK,2021-09-20 06:11:13,android,12179,Jail,Kanye West,Donda,trackdone,endplay,FALSE,FALSE
+3TWVcNBjDU3RSgFUD8y4ZX,2021-09-23 07:59:08,android,3845,Otro Vals,Feten Feten,Otro Vals,fwdbtn,fwdbtn,TRUE,FALSE
+2MnLkFqY9Rpg9s3Zv6ZJdK,2021-09-25 08:28:25,android,197333,Botella Tras Botella,Gera MX,Botella Tras Botella,trackdone,trackdone,TRUE,FALSE
+2Jpw6uRsDncpCYkvdrfTTk,2021-10-01 05:01:34,android,23,Karpe Diem,Ed Maverick,mix pa llorar en tu cuarto,fwdbtn,fwdbtn,TRUE,FALSE
+3y4Uza6K58JXQ7RYya8ZI5,2021-10-08 01:14:37,android,301133,Shelter from the Storm,Bob Dylan,Blood On The Tracks,trackdone,trackdone,TRUE,FALSE
+20I8RduZC2PWMWTDCZuuAN,2021-10-12 01:38:22,android,237026,Take Me Out,Franz Ferdinand,Franz Ferdinand,trackdone,trackdone,TRUE,FALSE
+1w6mcMacExya7bvbElMuar,2021-10-17 05:57:52,android,144632,Óleo de Mujer Con Sombrero,Silvio Rodríguez,Al Final de Este Viaje...,trackdone,trackdone,FALSE,FALSE
+6JnqbWl6N8g4Ikw5uZiJY4,2021-10-22 02:06:18,android,269693,No Surprise,Daughtry,Leave This Town,trackdone,trackdone,TRUE,FALSE
+5jgFfDIR6FR0gvlA56Nakr,2021-10-23 22:38:17,android,550,Blackbird - Remastered 2009,The Beatles,The Beatles,fwdbtn,fwdbtn,TRUE,FALSE
+2t2gZb03AlCSlBzbWeeHsM,2021-10-25 20:45:28,android,53269,Take It Away - Remixed 2015,Paul McCartney,Tug Of War,trackdone,logout,TRUE,FALSE
+4w3tQBXhn5345eUXDGBWZG,2021-11-12 04:01:29,android,162448,9 to 5,Dolly Parton,9 To 5 And Odd Jobs,fwdbtn,trackdone,TRUE,FALSE
+1c8gk2PeTE04A1pIDH9YMk,2021-11-14 07:52:10,android,1254,Rolling in the Deep,Adele,21,fwdbtn,fwdbtn,TRUE,FALSE
+50nfwKoDiSYg8zOCREWAm5,2021-11-24 17:23:14,android,207853,Shivers,Ed Sheeran,=,trackdone,trackdone,TRUE,FALSE
+6Ry6T1eQtwwoGRN7sKnh2l,2021-12-01 14:47:05,android,118080,Three Is Company,Howard Shore,The Lord of the Rings: The Fellowship of the Ring - the Complete Recordings,trackdone,trackdone,FALSE,FALSE
+7iN1s7xHE4ifF5povM6A48,2021-12-07 02:56:10,android,243026,Let It Be - Remastered 2009,The Beatles,Let It Be,trackdone,trackdone,TRUE,FALSE
+0Ruvs5IxqkGqQVWCO2oRpw,2021-12-15 01:53:53,android,213066,De Música Ligera - Remasterizado 2007,Soda Stereo,Me Verás Volver (Hits & Más),trackdone,trackdone,FALSE,FALSE
+2QDpeww0UVRnXZlGIISkC4,2021-12-20 07:16:36,android,52320,Wherever This Goes,The Fray,Helios,trackdone,fwdbtn,TRUE,FALSE
+51R40lGpjmBctPsOnu0mBe,2021-12-23 09:49:21,android,84190,No Me Digas Que No ( Boy Like You ),Nikki Clan,Nikki Clan (Re-Edicion),trackdone,endplay,FALSE,FALSE
+1b7LMtXCXGc2EwOIplI35z,2021-12-28 03:43:59,android,23,Stuck In The Middle With You,Stealers Wheel,Reservoir Dogs,backbtn,fwdbtn,FALSE,FALSE
+6bWvaqrIJTvk90SUteD6WL,2022-01-02 21:40:00,android,130760,AYAYAY!,Christian Nodal,AYAYAY!,appload,trackdone,FALSE,FALSE
+5UhWD2lwvZgko8uVEICN5r,2022-01-08 20:12:02,android,171466,I Left My Heart in San Francisco,Tony Bennett,60 Years: The Artistry of Tony Bennett,trackdone,trackdone,TRUE,FALSE
+0xIuNHHcKI1JDuBPlSwzb1,2022-01-16 18:16:58,android,78,Good Morning Good Morning - Remastered 2009,The Beatles,Sgt. Pepper's Lonely Hearts Club Band,trackdone,fwdbtn,TRUE,FALSE
+5DJctS0yiHX7agIGnfgnu1,2022-01-22 01:30:18,android,3201,Shockwave,Liam Gallagher,Why Me? Why Not.,trackdone,fwdbtn,TRUE,FALSE
+4OlcB3a0LJIrltfQt8vV1S,2022-01-28 19:26:53,android,221880,"Pagliacci / Act 1: ""Recitar!...Vesti la giubba""",Ruggero Leoncavallo,Verismo Arias,trackdone,trackdone,TRUE,FALSE
+0EE9L8Gt2f2ftxwZLX8SwT,2022-02-03 20:28:01,android,288453,In The Car Outside - Abridged,The Killers,Pressure Machine,trackdone,trackdone,FALSE,FALSE
+3gdewACMIVMEWVbyb8O9sY,2022-02-06 23:21:31,android,281613,"Rocket Man (I Think It's Going To Be A Long, Long Time)",Elton John,Honky Chateau,trackdone,trackdone,TRUE,FALSE
+1Vk4yRsz0iBzDiZEoFMQyv,2022-02-10 04:56:34,android,98040,Mia & Sebastian’s Theme,Justin Hurwitz,La La Land,trackdone,trackdone,TRUE,FALSE
+0FQLQfuCKSlcVSOPscqCJ6,2022-02-15 18:57:20,android,614266,"The Return of the King (feat. Sir James Galway, Viggo Mortensen and Renee Fleming)",Howard Shore,The Lord of the Rings: The Return of the King,trackdone,trackdone,FALSE,FALSE
+5vollujufHY0jMZxx77VWr,2022-02-22 01:34:24,android,301866,All These Things That I've Done,The Killers,Hot Fuss,trackdone,trackdone,FALSE,FALSE
+4H3KBBAe2Fcgv9lH6E10Oe,2022-03-02 17:44:25,android,174440,Harry in Winter,Patrick Doyle,Harry Potter And The Goblet Of Fire (Original Motion Picture Soundtrack),trackdone,trackdone,FALSE,FALSE
+4RCWB3V8V0dignt99LZ8vH,2022-03-11 02:31:18,android,232533,Hey There Delilah,Plain White T's,All That We Needed,trackdone,trackdone,FALSE,FALSE
+0AYP9qfJJumsxSOZF3MndI,2022-03-16 02:05:21,android,110266,Aquellas Pequeñas Cosas,Joan Manuel Serrat,Mediterráneo,trackdone,trackdone,FALSE,FALSE
+1xLs8Mu1QEVbGCpyHQ2r2U,2022-03-24 16:33:14,android,139906,Why,Dominic Fike,What Could Possibly Go Wrong,trackdone,trackdone,FALSE,FALSE
+13nyc1sxYqFDmaGyr1bmYP,2022-03-31 07:47:30,android,272626,Aves de Paso,Joaquín Sabina,"Yo, Mi, Me, Contigo",trackdone,trackdone,TRUE,FALSE
+4JtwqHO8budsBHlr9XRWUH,2022-04-06 04:43:56,android,259066,Espectro,Rosalía León,Más Alto,trackdone,trackdone,FALSE,FALSE
+1aiDlPLPljMFUylWjMZras,2022-04-23 08:33:23,android,180626,Something Like Olivia,John Mayer,Born and Raised,trackdone,trackdone,TRUE,FALSE
+7CZiDzGVjUssMSOXrDNYHL,2022-04-29 23:27:51,android,935,Ticket To Ride - Remastered 2009,The Beatles,Help!,fwdbtn,fwdbtn,TRUE,FALSE
+7D49Iig0avHre9RFSUMkd2,2022-05-02 22:26:38,android,1197,I Lived,OneRepublic,Native,fwdbtn,fwdbtn,TRUE,FALSE
+0wWuIseAsESzPDFPBYwkRs,2022-05-09 01:18:23,android,215137,Chelsea Hotel #2,Kyle Craft,Chelsea Hotel #2,trackdone,trackdone,TRUE,FALSE
+1rxoyGj1QuPoVi8fOft1Kt,2022-05-13 04:30:46,android,165666,Because - Remastered 2009,The Beatles,Abbey Road,trackdone,trackdone,TRUE,FALSE
+644es5aYPJghtZLjM1rmSP,2022-05-23 07:29:17,android,175040,Concerning Hobbits,Howard Shore,The Lord of the Rings: The Fellowship of the Ring (Original Motion Picture Soundtrack),clickrow,trackdone,FALSE,FALSE
+7BSZJLXPTktuZZAe8VYbbF,2022-06-03 23:54:21,android,197800,We Owned The Night,Lady A,Own The Night,trackdone,trackdone,TRUE,FALSE
+5yIVcrwQXdIlDgTMc8pa6z,2022-06-06 18:00:32,android,279266,Contigo,Joaquín Sabina,"Yo, Mi, Me, Contigo",trackdone,trackdone,FALSE,FALSE
+7wC4EW11mBVxDK3xdC7FTf,2022-06-14 00:24:37,android,150026,I'm A Loser - Remastered 2009,The Beatles,Beatles For Sale - Remastered,trackdone,trackdone,FALSE,FALSE
+2ZssXuZfktUr4MMDzEWD2Z,2022-06-18 20:08:17,android,214426,Good God Damn,Arcade Fire,Everything Now,trackdone,trackdone,TRUE,FALSE
+10rChmECwPcvTTj4w07hq4,2022-06-24 21:54:58,android,206773,Welcome to My Life,Simple Plan,Still Not Getting Any,trackdone,trackdone,TRUE,FALSE
+7vX5yphSQ7Drut4moiuIXv,2022-06-28 10:25:28,android,226720,Drunken Lullabies,Flogging Molly,Drunken Lullabies,fwdbtn,logout,TRUE,FALSE
+7fXbnwomPX7IoSQODCZDd5,2022-07-02 07:48:56,android,240000,Cherry Forest,Lucky Daye,Candydrip,trackdone,trackdone,TRUE,FALSE
+5NQYyej46WQkgCbnzGD21W,2022-07-04 00:00:38,android,1179,Dear Prudence - Remastered 2009,The Beatles,The Beatles,fwdbtn,fwdbtn,TRUE,FALSE
+4dGewjZWQhWhWvgvLcMUmf,2022-07-07 06:54:22,android,7382,Drink With Me - Live,Anthony Crivello,Les Misérables (10th Anniversary Concert Live at Royal Albert Hall),trackdone,fwdbtn,TRUE,FALSE
+4Sk6QA0RoRqZ3Hg9TlAX4X,2022-07-15 02:48:03,android,210866,Long As I Can See The Light,Creedence Clearwater Revival,Cosmo's Factory,trackdone,trackdone,TRUE,FALSE
+3OgZdIAHaDMOtYq8Z5iCQ5,2022-07-22 02:58:26,android,49308,Believe,Mumford & Sons,Wilder Mind,appload,trackdone,TRUE,FALSE
+2DgelO2bnAAAgy2OJbjB72,2022-07-26 20:08:07,android,278066,Y Si Amanece por Fin,Joaquín Sabina,Mentiras Piadosas,trackdone,trackdone,FALSE,FALSE
+5KF3zQP0cqLklYnF6riogg,2022-08-12 03:11:40,android,911,"Sunday Morning Coming Down - Live at Ryman Auditorium, Nashville, TN - July 1970",Johnny Cash,The Johnny Cash Show,fwdbtn,fwdbtn,TRUE,FALSE
+0uppYCG86ajpV2hSR3dJJ0,2022-08-14 01:07:06,android,23,Give It Away,Red Hot Chili Peppers,Blood Sugar Sex Magik,fwdbtn,fwdbtn,TRUE,FALSE
+07jRoiOgRwkURxytyoB3s4,2022-08-24 02:47:52,android,1000,Yearnin',The Black Keys,The Big Come Up,fwdbtn,fwdbtn,TRUE,FALSE
+5SwgE4wA0P7f6AEz2UQMB2,2022-09-09 02:38:15,android,104605,Uncle Albert / Admiral Halsey - Medley / 2012 Remaster,Paul McCartney,Ram,trackdone,logout,TRUE,FALSE
+2Xn7NadvZ56D0B2D7x2CSL,2022-09-18 19:53:37,android,290414,Crucify Your Mind,Rodríguez,Cold Fact,clickrow,trackdone,FALSE,FALSE
+43YnOHuci8PolOAzI7XoXe,2022-09-25 18:59:29,android,303826,Red Eye,Vance Joy,Dream Your Life Away,trackdone,trackdone,TRUE,FALSE
+0FfX0nofboxZjP0diT1eFv,2022-09-30 02:03:38,android,262600,I’ll Make It Up To You,Imagine Dragons,Evolve,trackdone,trackdone,TRUE,FALSE
+4HXOBjwv2RnLpGG4xWOO6N,2022-09-30 17:11:10,android,1668,Princess of China,Coldplay,Mylo Xyloto,fwdbtn,fwdbtn,TRUE,FALSE
+4xaPCPyMiFDiw7SoksTBKo,2022-09-30 20:07:09,android,985,"The Road Goes Ever On..., Pt. 1",Howard Shore,The Lord of the Rings: The Fellowship of the Ring - the Complete Recordings,fwdbtn,fwdbtn,TRUE,FALSE
+1VRKBE1ssU5ZuBt90i3Jdy,2022-10-01 23:18:25,android,2249,Mae,Herb Alpert & The Tijuana Brass,!!Going Places!!,fwdbtn,fwdbtn,TRUE,FALSE
+5HmYuJIqLEXOa9i4YQJWoQ,2022-10-04 23:37:01,android,196200,Cantares - En Directo,Joan Manuel Serrat,Serrat En Directo,trackdone,trackdone,TRUE,FALSE
+6XpfrI2hjCWLyOFAuLJ83z,2022-10-17 20:41:16,android,8636,On Top Of The World,Imagine Dragons,Night Visions,trackdone,fwdbtn,TRUE,TRUE
+0suLngfo7rJoetk7Ub6N8l,2022-10-25 16:35:24,android,170720,Octopus's Garden - Remastered 2009,The Beatles,Abbey Road,trackdone,trackdone,TRUE,FALSE
+6V78ktWCGcJIIB5DPJBoPn,2022-10-28 01:00:59,android,283866,19 Dias y 500 Noches,Joaquín Sabina,19 Dias Y 500 Noches,trackdone,trackdone,TRUE,FALSE
+5BY0p2EH4EznNZ0MFD9mjt,2022-11-01 00:24:32,android,192613,Me Enamora,Juanes,La Vida Es Un Ratico,trackdone,trackdone,FALSE,FALSE
+67HKtdqchK0rmODxsBeWT8,2022-11-13 00:48:55,android,240000,Can You Feel The Love Tonight,Elton John,Love Songs,trackdone,trackdone,FALSE,FALSE
+59XIQ4BTfdDoOYO7448kAj,2022-11-20 06:35:45,android,139933,Parachute Woman,Keith Richards,Beggars Banquet,trackdone,trackdone,TRUE,FALSE
+1xYBeQ5u8uaJ3oBWktjGyJ,2022-11-27 22:52:48,android,234080,Acurrucar,Ed Maverick,mix pa llorar en tu cuarto,trackdone,trackdone,FALSE,FALSE
+2CFDPiNUxcSOqfQtUHYNxF,2022-12-10 04:39:20,android,1619,De Nada Sirve,No Te Va Gustar,Otras Canciones,fwdbtn,fwdbtn,FALSE,TRUE
+4SUF4kyuSX9siVjzpjEibr,2022-12-20 19:11:59,android,274666,Over & Over - 2015 Remaster,Fleetwood Mac,Tusk,clickrow,trackdone,FALSE,FALSE
+4OZyVAbGOcrv4BYv5xDjet,2023-01-01 02:48:24,android,244449,Here Comes the Night Time,Arcade Fire,Reflektor,trackdone,fwdbtn,FALSE,TRUE
+12QphPukpWDR9w1iimddfP,2023-01-06 00:20:33,android,276386,Ani Kuni,Polo & Pan,Ani Kuni,trackdone,trackdone,TRUE,FALSE
+1gugDOSMREb34Xo0c1PlxM,2023-01-22 21:19:55,android,1741,She Looks So Perfect,5 Seconds of Summer,5 Seconds Of Summer,fwdbtn,fwdbtn,TRUE,TRUE
+7hMhO4oenpVkVaM5bNkEbz,2023-01-30 00:30:59,android,194680,When the Ship Comes In,Bob Dylan,The Times They Are A-Changin',fwdbtn,trackdone,TRUE,FALSE
+5LYAuItJcXH06adHkebOmf,2023-02-02 22:19:45,android,2175,The Blue Danube,Johann Strauss II,Strauss: Wiener Walzer,fwdbtn,fwdbtn,FALSE,TRUE
+6iLSVjetBzuGv1KIgan3HD,2023-02-08 20:26:21,windows,960,Let It Bleed,The Rolling Stones,Let It Bleed,fwdbtn,fwdbtn,TRUE,TRUE
+3YBZIN3rekqsKxbJc9FZko,2023-02-23 17:54:24,android,405640,Paradise City,Guns N' Roses,Appetite For Destruction,trackdone,trackdone,TRUE,FALSE
+1A8SxnqRK3qabmuN2qxIpa,2023-03-03 16:54:12,android,284546,Spaceman,The Killers,Day & Age - Bonus Tracks,trackdone,trackdone,TRUE,FALSE
+3BQHpFgAp4l80e1XslIjNI,2023-03-13 04:19:09,android,125666,Yesterday - Remastered 2009,The Beatles,Help!,trackdone,trackdone,TRUE,FALSE
+3ZE3wv8V3w2T2f7nOCjV0N,2023-03-22 02:42:15,android,235986,Life on Mars? - 2015 Remaster,David Bowie,Hunky Dory,trackdone,trackdone,TRUE,FALSE
+4Im6GRj17qa7NW76OsJh1s,2023-04-01 17:54:22,android,286386,I Guess I Just Feel Like,John Mayer,Sob Rock,fwdbtn,trackdone,TRUE,FALSE
+3viTUjp1kuG6bsUHgkKFld,2023-04-07 04:54:23,android,131719,Splish Splash,Bobby Darin,The Ultimate Bobby Darin,trackdone,trackdone,TRUE,FALSE
+56sxN1yKg1dgOZXBcAHkJG,2023-04-10 04:38:29,android,209693,"Gone, Gone, Gone",Phillip Phillips,The World From The Side Of The Moon,trackdone,trackdone,TRUE,FALSE
+3F8xLc6T4VvKH7I6wqVAN2,2023-04-24 00:33:43,android,220693,Lovebug,Jonas Brothers,A Little Bit Longer,trackdone,trackdone,TRUE,FALSE
+4CV3GcAHLsYhWCQAoooQZW,2023-05-01 04:45:27,android,186826,Llamada De Mi Ex,La Arrolladora Banda El Limón De Rene Camacho,Irreversible... 2012,trackdone,trackdone,FALSE,FALSE
+41XiurZlYzjsKtQUG8VS5L,2023-05-08 19:03:42,android,87583,"Puccini: La bohème, Act I: Che gelida manina",Giacomo Puccini,Pavarotti Forever,trackdone,logout,TRUE,FALSE
+2DATcVxBdGcIIGd0sb1s4X,2023-05-15 22:48:12,android,195186,"Don Giovanni, ossia Il dissoluto punito, K.527 / Act 1: ""Là ci darem la mano""",Wolfgang Amadeus Mozart,Mozart: Don Giovanni,trackdone,trackdone,TRUE,FALSE
+2GKxyUw8MQNvc0EP4016Yg,2023-05-20 00:54:25,android,2881,What Goes On,The Velvet Underground,The Velvet Underground,fwdbtn,fwdbtn,TRUE,TRUE
+4LreWoO3cpgiIfrRwbOUSF,2023-05-21 07:10:09,android,204253,Rosa Pastel,Peso Pluma,Rosa Pastel,trackdone,trackdone,FALSE,FALSE
+6AhZVsDudTq5KdJ5LbE32f,2023-06-10 02:12:42,android,2794,Black Mountain Side - Remaster,Led Zeppelin,Led Zeppelin,trackdone,fwdbtn,TRUE,TRUE
+4OlcB3a0LJIrltfQt8vV1S,2023-06-13 23:58:07,android,221880,"Pagliacci / Act 1: ""Recitar!...Vesti la giubba""",Ruggero Leoncavallo,Verismo Arias,fwdbtn,trackdone,TRUE,FALSE
+4ZPdLEztrlZqbJkgHNw54L,2023-07-01 23:32:44,android,207000,Good Life,Kanye West,Graduation,trackdone,trackdone,TRUE,FALSE
+3mTEYjm3kIm4YzJ5zxJZjs,2023-07-14 20:32:31,android,229320,Flares,The Script,No Sound Without Silence,trackdone,trackdone,TRUE,FALSE
+2dLzyrwHEEK8umYoOYaSPc,2023-07-22 04:51:52,android,96960,"I Still Miss Someone - Live at Folsom State Prison, Folsom, CA (1st Show) - January 1968",Johnny Cash,At Folsom Prison,trackdone,trackdone,TRUE,FALSE
+7Gvf6Li9MYft4fUijkFjKq,2023-08-03 01:05:04,mac,285745,Strawberry Wine,Noah Kahan,Stick Season,trackdone,trackdone,FALSE,FALSE
+0z1o5L7HJx562xZSATcIpY,2023-08-10 19:24:18,mac,267151,Exit Music (For A Film),Radiohead,OK Computer,trackdone,trackdone,TRUE,FALSE
+1aedGJcS0OmGSzzO5iskIV,2023-08-17 02:03:40,mac,400469,"L'elisir d'amore / Act 2: ""Una furtiva lagrima...Eccola!""",Gaetano Donizetti,Donizetti: L'Elisir d'Amore,trackdone,trackdone,TRUE,FALSE
+0DdyERdVfKbtLZyR87xBZo,2023-09-17 01:03:14,android,232179,El Potaje,Cimafunk,El Potaje,trackdone,trackdone,TRUE,FALSE
+1NDjisuZaZBzYoen1tk1FW,2023-09-24 03:48:04,android,307636,Trouble,Midnight Generation,Funk Your Bones (Side B),trackdone,trackdone,TRUE,FALSE
+40V54Cj1JFSTpaJi8UikZE,2023-10-01 23:43:56,android,347800,Radio Ga Ga,Queen,The Works,trackdone,trackdone,TRUE,FALSE
+00oZhqZIQfL9P5CjOP6JsO,2023-10-06 23:19:36,android,179546,Tomorrow Never Knows - Remastered 2009,The Beatles,Revolver,trackdone,trackdone,TRUE,FALSE
+6TqXieeBcZZHyaO14hQpKx,2023-10-17 04:53:35,android,268866,Luz De Dia,Los Enanitos Verdes,Nectar,trackdone,trackdone,TRUE,FALSE
+6uzGmmQ4CuG9HvZktEy0LF,2023-11-09 09:41:32,android,185980,Qué Bonito Es Querer,Manuel Carrasco,La Cruz Del Mapa,trackerror,logout,TRUE,FALSE
+2ONpXycQzFmWiutUm7vpIC,2023-11-21 00:45:52,android,7767,Hell of a Season,The Black Keys,El Camino,trackdone,fwdbtn,TRUE,TRUE
+1BLOVHYYlH4JUHQGcpt75R,2023-11-26 03:55:09,android,343303,Ode To The Mets,The Strokes,The New Abnormal,trackdone,logout,TRUE,FALSE
+4i4oDSWluhViEzuYIZYtmJ,2023-12-17 00:45:03,android,5174,Fourth Time Around,Bob Dylan,Blonde On Blonde,fwdbtn,fwdbtn,TRUE,TRUE
+7DhYjNLksXZhbRQeheAums,2023-12-29 15:20:40,android,266160,Caraluna,Bacilos,Caraluna,trackdone,trackdone,TRUE,FALSE
+4224tsPgiIlzm5p8n83Bon,2024-01-01 22:31:18,android,114746,Horchata,Vampire Weekend,Contra,fwdbtn,fwdbtn,TRUE,TRUE
+0TpzAepHab0NofzyqV6As8,2024-01-09 01:58:11,android,77466,Samwise the Brave,Howard Shore,The Lord of the Rings: The Two Towers (Original Motion Picture Soundtrack),trackdone,logout,FALSE,FALSE
+5GpngZwVz4DO2jLBV9d7iZ,2024-01-18 23:19:27,android,211281,Gobiérname,Diamante Eléctrico,Leche de Tigre,trackdone,trackdone,TRUE,FALSE
+5p3JunprHCxClJjOmcLV8G,2024-01-24 22:05:34,android,254173,Walk On the Wild Side,Lou Reed,Transformer,trackdone,trackdone,TRUE,FALSE
+2Cy7QY8HPLk925AyNAt6OG,2024-01-29 18:34:14,android,202853,Black or White - Single Version,Michael Jackson,The Essential Michael Jackson,trackdone,trackdone,TRUE,FALSE
+0J2p4KYdr6Mg4ET6JPlbe1,2024-02-10 04:05:17,android,198572,Super Trouper,ABBA,Super Trouper,trackdone,logout,FALSE,FALSE
+3OMw6qj95yhfeqBIdL0c1g,2024-02-21 02:28:32,android,258933,On Top,The Killers,Hot Fuss,trackdone,trackdone,TRUE,FALSE
+7xrODhgXFNVsRtKoyt5rJo,2024-02-23 23:49:39,android,183253,"Cocaine Blues - Live at Folsom State Prison, Folsom, CA - January 1968",Johnny Cash,At Folsom Prison,trackdone,trackdone,TRUE,FALSE
+3hx9T4CWGDvMbINMBfyrnW,2024-03-01 19:00:45,android,205226,Mediterraneo,Joan Manuel Serrat,Discografía en Castellano,trackdone,trackdone,TRUE,FALSE
+2Cy7QY8HPLk925AyNAt6OG,2024-03-13 05:18:27,android,202853,Black or White - Single Version,Michael Jackson,The Essential Michael Jackson,trackdone,trackdone,TRUE,FALSE
+2zLLGT8WWT1dl73TlVL9qs,2024-04-02 03:48:56,android,262925,Mariposa Traicionera - 2020 Remasterizado,Maná,Revolución De Amor,trackdone,trackdone,FALSE,FALSE
+7a8bFS0oRVpDfxAcVAQMO3,2024-04-14 19:35:32,android,77941,Buenos Días,Laura Pérez,Canciones Chiquitas,trackdone,trackdone,TRUE,FALSE
+7zSBOSD4w5LGv1bIblkVFp,2024-05-01 21:53:54,android,184963,Telefonía,Jorge Drexler,Salvavidas de hielo,trackdone,trackdone,TRUE,FALSE
+3B4q6KbHbGV51HO3GznBFF,2024-05-14 19:55:57,android,170906,What I Got,Sublime,Sublime,trackdone,trackdone,TRUE,FALSE
+40V54Cj1JFSTpaJi8UikZE,2024-06-01 22:35:00,android,347800,Radio Ga Ga,Queen,The Works,trackdone,trackdone,TRUE,FALSE
+1ITQbrueGLl581a25XXm9c,2024-06-11 00:02:02,mac,213106,Rocky Raccoon - Remastered 2009,The Beatles,The Beatles,trackdone,trackdone,TRUE,FALSE
+3cdhgO3vgHyOIADMXokd2t,2024-07-07 09:29:25,android,12087,Nothing,The Script,Science & Faith,clickrow,endplay,TRUE,TRUE
+4w3tQBXhn5345eUXDGBWZG,2024-08-02 21:36:08,android,162466,9 to 5,Dolly Parton,9 To 5 And Odd Jobs,trackdone,trackdone,TRUE,FALSE
+48eRbUfNOF4xnNHwSSYubb,2024-08-06 00:35:52,android,21358,Angel Of Music,Andrew Lloyd Webber,The Phantom Of The Opera,trackdone,endplay,FALSE,TRUE
+0pCB9UWGXALpeXcns33vnL,2024-08-18 01:17:32,android,82083,Radioactive,Imagine Dragons,Night Visions,trackdone,logout,TRUE,FALSE
+7zGc3mLdI4VKVMTB22qky3,2024-09-08 18:46:45,android,176000,Lies,J.J. Cale,Really,trackdone,trackdone,TRUE,FALSE
+7kipZd4tWx6Mu8kBgB2Z2r,2024-09-17 17:36:29,android,252773,God - Remastered 2010,John Lennon,Plastic Ono Band,trackdone,trackdone,TRUE,FALSE
+3QEYYJTIEd6Tv0HCrgHvri,2024-09-22 09:16:25,android,408800,Magic,Polo & Pan,Cyclorama,clickrow,trackdone,TRUE,FALSE
+4rMNgxEwGWoPHIUcvB5BrB,2024-10-01 06:00:05,android,257847,It Will Rain,Bruno Mars,It Will Rain,trackdone,trackdone,TRUE,FALSE
+5ifX0FhGoljScuqQtNRAyL,2024-10-11 23:45:46,android,242640,"Wanted Man - Live at San Quentin State Prison, San Quentin, CA - February 1969",Johnny Cash,At San Quentin,trackdone,trackdone,TRUE,FALSE
+0JSSvxGMpEBnsDbs9BlM6R,2024-10-18 19:40:57,android,1555,Picasso’s Last Words (Drink to Me) - 2010 Remaster,Paul McCartney,Band On The Run,fwdbtn,fwdbtn,TRUE,TRUE
+71LsKf3xISiOlY1mj7FFPP,2024-10-22 13:23:29,android,164546,Happiness Is A Warm Gun - Remastered 2009,The Beatles,The Beatles,trackdone,trackdone,TRUE,FALSE
+0pjCkLjbgSLn5c0Ilwuv8z,2024-10-26 04:26:34,android,211520,The Longest Wave,Red Hot Chili Peppers,The Getaway,trackdone,trackdone,TRUE,FALSE
+5tvUEs7zWbe9rPXQUGE6Cg,2024-11-08 02:00:00,android,207293,Hail Rain or Sunshine,The Script,No Sound Without Silence,fwdbtn,trackdone,TRUE,FALSE
+0d3Y9yuUwnq3jHTPRyw3io,2024-11-10 23:00:57,android,1495,Break The News,The Who,WHO,fwdbtn,fwdbtn,TRUE,TRUE
+7DUTYJGWHalTp97kFDmU64,2024-11-18 00:38:51,android,11182,Dominoes,Paul McCartney,Egypt Station,remote,trackdone,TRUE,FALSE
+7Dm3dV3WPNdTgxoNY7YFnc,2024-11-26 17:13:24,android,269813,The Chain - 2004 Remaster,Fleetwood Mac,Rumours,playbtn,trackdone,TRUE,FALSE
+35srNkJVToAzYiZzron1FY,2024-11-30 19:56:02,android,253906,Young Forever,JAY-Z,The Blueprint 3,trackdone,trackdone,TRUE,FALSE

@@ -1,0 +1,106 @@
+﻿.logoloop {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  user-select: none;
+}
+
+.logoloop--horizontal {
+  flex-direction: row;
+}
+
+.logoloop--vertical {
+  flex-direction: column;
+}
+
+.logoloop__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.logoloop--vertical .logoloop__track {
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--logoloop-gap, 32px);
+  padding-right: var(--logoloop-gap, 32px);
+  flex-shrink: 0;
+}
+
+.logoloop--vertical .logoloop__list {
+  flex-direction: column;
+  padding-right: 0;
+  padding-bottom: var(--logoloop-gap, 32px);
+}
+
+.logoloop__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--logoloop-logoHeight, 28px);
+  flex-shrink: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logoloop--scale-hover .logoloop__item:hover {
+  transform: scale(1.08);
+}
+
+.logoloop__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoloop__node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Edge Fade Out */
+.logoloop--fade {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.logoloop--vertical.logoloop--fade {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}

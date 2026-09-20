@@ -1,0 +1,111 @@
+﻿.icon-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.icon-btn {
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  perspective: 400px;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.3, 1);
+  outline: none;
+  user-select: none;
+}
+
+.icon-btn:hover {
+  transform: translateY(-4px);
+}
+
+.icon-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.icon-btn__back {
+  position: absolute;
+  inset: 2px;
+  border-radius: 1.25rem;
+  filter: blur(14px);
+  opacity: 0.65;
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+  transform: translateZ(-8px);
+}
+
+.icon-btn:hover .icon-btn__back {
+  opacity: 1;
+  filter: blur(18px);
+  transform: translateZ(-8px) scale(1.15);
+}
+
+.icon-btn__front {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.3, 1), background 0.3s ease, border-color 0.3s ease;
+  transform: translateZ(10px);
+}
+
+.icon-btn:hover .icon-btn__front {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateZ(18px) scale(1.06);
+}
+
+.icon-btn.is-active .icon-btn__front {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.icon-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.icon-btn:hover .icon-btn__icon {
+  transform: scale(1.12);
+}
+
+.icon-btn__label {
+  position: absolute;
+  bottom: -1.75rem;
+  font-size: 0.75rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #d1cfc7;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  pointer-events: none;
+}
+
+.icon-btn:hover .icon-btn__label,
+.icon-btn.is-active .icon-btn__label {
+  opacity: 1;
+  color: #ffffff;
+  transform: translateY(2px);
+}
