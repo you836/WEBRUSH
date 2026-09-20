@@ -118,24 +118,24 @@ export function HeroSection({ stats, onNavigate }: HeroSectionProps) {
                 color="#f5f0e8"
                 tint="#e8a849"
                 direction="diagonal"
-                echoes={10}
-                offset={28}
-                lag={0.22}
+                echoes={6}
+                offset={20}
+                lag={0.18}
                 fade={0.72}
-                blur={2.5}
+                blur={1.5}
                 className="font-serif tracking-tight select-none"
               />
             </div>
             <DepthText
               text="a receipt."
-              layers={32}
-              depth={3.0}
+              layers={16}
+              depth={2.5}
               faceColor="#f5f0e8"
               depthColor="#e8a849"
-              tilt={9}
+              tilt={8}
               pointerTracking={true}
               autoOrbit={true}
-              orbitSpeed={0.3}
+              orbitSpeed={0.25}
               fontSize="clamp(3.5rem, 11vw, 8.5rem)"
               fontWeight={700}
               className="font-serif tracking-tight"

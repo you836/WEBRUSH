@@ -1,93 +1,9 @@
-import { useEffect, useRef } from 'react';
 import { ModelViewer } from '@/components/ui/ModelViewer';
 
-interface Particle {
-  x: number;
-  y: number;
-  radius: number;
-  vx: number;
-  vy: number;
-  alpha: number;
-  color: string;
-}
-
 export function AnimatedBackground() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    let animationFrameId: number;
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
-
-    const handleResize = () => {
-      if (!canvas) return;
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Color palette matching theme
-    const colors = [
-      'rgba(232, 168, 73, ', // Amber
-      'rgba(91, 138, 245, ', // Blue
-      'rgba(167, 139, 250, ', // Purple/Music
-    ];
-
-    // Ambient floating particles
-    const particleCount = Math.min(Math.floor((width * height) / 45000), 16);
-    const particles: Particle[] = [];
-
-    for (let i = 0; i < particleCount; i++) {
-      particles.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        radius: Math.random() * 1.2 + 0.3,
-        vx: (Math.random() - 0.5) * 0.08,
-        vy: (Math.random() - 0.5) * 0.08,
-        alpha: Math.random() * 0.12 + 0.03,
-        color: colors[Math.floor(Math.random() * colors.length)],
-      });
-    }
-
-    const render = () => {
-      ctx.clearRect(0, 0, width, height);
-
-      // Draw particles
-      for (const p of particles) {
-        p.x += p.vx;
-        p.y += p.vy;
-
-        if (p.x < 0) p.x = width;
-        if (p.x > width) p.x = 0;
-        if (p.y < 0) p.y = height;
-        if (p.y > height) p.y = 0;
-
-        ctx.fillStyle = `${p.color}${p.alpha})`;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      animationFrameId = requestAnimationFrame(render);
-    };
-
-    render();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
-
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none" aria-hidden="true">
-      {/* 3D High-Res Interior Classroom */}
+      {/* 3D High-Performance Classroom Background */}
       <div className="absolute inset-0 w-full h-full opacity-100 pointer-events-none">
         <ModelViewer
           url="/models/classroom.glb"
@@ -101,7 +17,7 @@ export function AnimatedBackground() {
           hideCeiling={true}
           hideObstructingWalls={true}
           swayMode={true}
-          autoRotateSpeed={0.22}
+          autoRotateSpeed={0.20}
           ambientIntensity={5.0}
           keyLightIntensity={7.0}
           fillLightIntensity={5.5}
@@ -113,12 +29,9 @@ export function AnimatedBackground() {
         />
       </div>
 
-      {/* Aesthetic Subtle Black Blurry Effect */}
-      <div className="absolute inset-0 bg-[#0a0806]/30 backdrop-blur-[2px] pointer-events-none" />
-      <div className="absolute inset-0 bg-radial from-transparent via-[#0a0806]/10 to-[#0a0806]/50 pointer-events-none" />
-
-      {/* Subtle ambient particles */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-15 pointer-events-none" />
+      {/* GPU-Friendly Aesthetic Dark Overlay (Smooth 60 FPS without GPU readback lag) */}
+      <div className="absolute inset-0 bg-[#0a0806]/35 pointer-events-none" />
+      <div className="absolute inset-0 bg-radial from-transparent via-[#0a0806]/15 to-[#0a0806]/60 pointer-events-none" />
     </div>
   );
 }

@@ -127,9 +127,6 @@ const ModelInner = ({
 
     content.traverse((o: any) => {
       if (o.isMesh) {
-        o.castShadow = true;
-        o.receiveShadow = true;
-
         // Double-side all interior materials and boost texture sharpness (anisotropy)
         if (o.material) {
           const mats = Array.isArray(o.material) ? o.material : [o.material];
@@ -345,11 +342,10 @@ export const ModelViewer = ({
       }}
     >
       <Canvas
-        shadows
         frameloop="always"
-        dpr={[1, 2]} // High-DPI crystal clear resolution
+        dpr={1} // Optimal 1x native performance - completely eliminates GPU fill-rate lag
         gl={{
-          preserveDrawingBuffer: true,
+          preserveDrawingBuffer: false,
           antialias: true,
           alpha: true,
           powerPreference: 'high-performance'
@@ -358,20 +354,18 @@ export const ModelViewer = ({
           gl.toneMapping = THREE.ACESFilmicToneMapping;
           gl.toneMappingExposure = 2.0; // Radiant, crystal-clear exposure
           gl.outputColorSpace = THREE.SRGBColorSpace;
-          gl.shadowMap.enabled = true;
-          gl.shadowMap.type = THREE.PCFSoftShadowMap;
         }}
         camera={{ fov: 52, position: [0, 0.9, camZ], near: 0.01, far: 100 }}
         style={{ pointerEvents: 'none', background: 'transparent' }}
       >
         {environmentPreset !== 'none' && <Environment preset={environmentPreset} background={false} />}
 
-        {/* 360-degree High-Vibrancy Studio & Classroom Lighting */}
+        {/* High-Performance Studio & Classroom Lighting */}
         <ambientLight intensity={ambientIntensity} color="#fffcf5" />
         <hemisphereLight intensity={2.4} color="#ffe8cc" groundColor="#4a3f35" />
         
-        {/* Cardinal Directional Lights */}
-        <directionalLight position={[8, 14, 8]} intensity={keyLightIntensity} color="#fff8f0" castShadow />
+        {/* Cardinal Directional Lights - Fast, zero-shadow pass */}
+        <directionalLight position={[8, 14, 8]} intensity={keyLightIntensity} color="#fff8f0" />
         <directionalLight position={[-8, 10, -8]} intensity={fillLightIntensity} color="#ffe2b8" />
         <directionalLight position={[8, 10, -8]} intensity={fillLightIntensity} color="#ffe2b8" />
         <directionalLight position={[-8, 8, 8]} intensity={rimLightIntensity} color="#e8a849" />
@@ -399,8 +393,6 @@ export const ModelViewer = ({
             onLoaded={onModelLoaded}
           />
         </Suspense>
-
-        <ContactShadows position={[0, -1.8, 0]} opacity={0.6} scale={14} blur={2} far={5} color="#000000" />
       </Canvas>
     </div>
   );
