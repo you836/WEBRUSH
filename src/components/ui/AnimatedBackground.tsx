@@ -87,23 +87,23 @@ export function AnimatedBackground() {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none" aria-hidden="true">
-      {/* 3D High-Res Interior Classroom - Crisp, bright, full opacity */}
+      {/* 3D High-Res Interior Classroom */}
       <div className="absolute inset-0 w-full h-full opacity-100 pointer-events-none">
         <ModelViewer
           url="/models/classroom.glb"
           height="100vh"
           width="100vw"
-          targetScale={5.0}
-          defaultZoom={2.0}
-          modelYOffset={-0.28}
-          defaultRotationX={-14}
-          defaultRotationY={20}
+          targetScale={4.0}
+          defaultZoom={2.7}
+          modelYOffset={-0.18}
+          defaultRotationX={10}
+          defaultRotationY={-20}
           hideCeiling={true}
           hideObstructingWalls={true}
           swayMode={true}
           autoRotateSpeed={0.22}
-          ambientIntensity={4.2}
-          keyLightIntensity={6.0}
+          ambientIntensity={4.5}
+          keyLightIntensity={6.2}
           fillLightIntensity={4.8}
           rimLightIntensity={4.5}
           environmentPreset="sunset"
@@ -112,6 +112,10 @@ export function AnimatedBackground() {
           className="w-full h-full"
         />
       </div>
+
+      {/* Aesthetic Subtle Black Blurry Effect */}
+      <div className="absolute inset-0 bg-[#0a0806]/35 backdrop-blur-[2.5px] pointer-events-none" />
+      <div className="absolute inset-0 bg-radial from-transparent via-[#0a0806]/15 to-[#0a0806]/55 pointer-events-none" />
 
       {/* Subtle ambient particles */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-15 pointer-events-none" />

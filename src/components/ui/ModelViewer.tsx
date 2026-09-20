@@ -331,8 +331,8 @@ export const ModelViewer = ({
     }
   }, [url]);
 
-  const initYaw = deg2rad(defaultRotationX);
-  const initPitch = deg2rad(defaultRotationY);
+  const initPitch = deg2rad(defaultRotationX);
+  const initYaw = deg2rad(defaultRotationY);
   const camZ = Math.min(Math.max(defaultZoom, minZoomDistance), maxZoomDistance);
 
   return (
@@ -356,29 +356,29 @@ export const ModelViewer = ({
         }}
         onCreated={({ gl }) => {
           gl.toneMapping = THREE.ACESFilmicToneMapping;
-          gl.toneMappingExposure = 1.45; // Vibrant bright exposure
+          gl.toneMappingExposure = 2.0; // Radiant, crystal-clear exposure
           gl.outputColorSpace = THREE.SRGBColorSpace;
           gl.shadowMap.enabled = true;
           gl.shadowMap.type = THREE.PCFSoftShadowMap;
         }}
-        camera={{ fov: 50, position: [0, 0.5, camZ], near: 0.01, far: 100 }}
+        camera={{ fov: 52, position: [0, 0.9, camZ], near: 0.01, far: 100 }}
         style={{ pointerEvents: 'none', background: 'transparent' }}
       >
         {environmentPreset !== 'none' && <Environment preset={environmentPreset} background={false} />}
 
-        {/* 360-degree Omnidirectional Studio & Warm Interior Lighting */}
+        {/* 360-degree High-Vibrancy Studio & Classroom Lighting */}
         <ambientLight intensity={ambientIntensity} color="#fffcf5" />
-        <hemisphereLight intensity={1.6} color="#ffe8cc" groundColor="#3a3028" />
+        <hemisphereLight intensity={2.4} color="#ffe8cc" groundColor="#4a3f35" />
         
-        {/* Cardinal Directional Lights (Front, Back, Left, Right) - Zero Blackness */}
-        <directionalLight position={[6, 12, 6]} intensity={keyLightIntensity} color="#fff6e8" castShadow />
-        <directionalLight position={[-6, 8, -6]} intensity={fillLightIntensity} color="#ffd499" />
-        <directionalLight position={[6, 8, -6]} intensity={fillLightIntensity} color="#ffd499" />
-        <directionalLight position={[-6, 6, 6]} intensity={rimLightIntensity} color="#e8a849" />
+        {/* Cardinal Directional Lights */}
+        <directionalLight position={[8, 14, 8]} intensity={keyLightIntensity} color="#fff8f0" castShadow />
+        <directionalLight position={[-8, 10, -8]} intensity={fillLightIntensity} color="#ffe2b8" />
+        <directionalLight position={[8, 10, -8]} intensity={fillLightIntensity} color="#ffe2b8" />
+        <directionalLight position={[-8, 8, 8]} intensity={rimLightIntensity} color="#e8a849" />
         
-        {/* Warm Classroom Center Point Lights */}
-        <pointLight position={[0, 1.8, 0]} intensity={4.5} color="#fff2dc" distance={12} decay={1.5} />
-        <pointLight position={[1.5, 1.2, 1]} intensity={2.5} color="#ffe4b5" distance={8} decay={1.5} />
+        {/* Warm Classroom Center Fill Lights */}
+        <pointLight position={[0, 2.5, 0]} intensity={5.5} color="#fff6e8" distance={16} decay={1.2} />
+        <pointLight position={[2, 1.8, 1]} intensity={3.5} color="#ffeacc" distance={10} decay={1.2} />
 
         <Suspense fallback={<Loader placeholderSrc={placeholderSrc} />}>
           <ModelInner
