@@ -32,6 +32,7 @@ import {
   CartesianGrid,
 } from 'recharts';
 import { StatCard } from '@/components/ui/StatCard';
+import { BorderGlow } from '@/components/ui/BorderGlow';
 import { formatCurrency, formatMonth } from '@/lib/formatting';
 import type { DataStats, LifeActivity, LifeSource } from '@/types';
 
@@ -189,314 +190,330 @@ export function InsightDashboard({ stats }: InsightDashboardProps) {
 
       {/* Modern Redesigned Charts Row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-        {/* Main Monthly Activity Flow */}
-        <div className="bg-charcoal/90 backdrop-blur-md border border-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden group">
-          <div className="absolute -top-20 -right-20 w-64 h-64 bg-amber/5 rounded-full blur-3xl pointer-events-none" />
+        {/* Main Monthly Activity Flow with BorderGlow */}
+        <BorderGlow
+          glowColor="40 85 80"
+          colors={['#e8a849', '#f59e0b', '#d97706']}
+          borderRadius={20}
+          className="h-full"
+        >
+          <div className="bg-charcoal/90 backdrop-blur-md p-6 sm:p-8 flex flex-col justify-between h-full relative overflow-hidden group">
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-amber/5 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h3 className="text-base sm:text-xl font-semibold text-ivory flex items-center gap-2.5">
-                <Clock size={18} className="text-amber" />
-                Chronological Density Flow
-              </h3>
-              <p className="text-xs sm:text-sm text-ivory-muted/70 mt-1">Continuous volume timeline across active months</p>
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h3 className="text-base sm:text-xl font-semibold text-ivory flex items-center gap-2.5">
+                  <Clock size={18} className="text-amber" />
+                  Chronological Density Flow
+                </h3>
+                <p className="text-xs sm:text-sm text-ivory-muted/70 mt-1">Continuous volume timeline across active months</p>
+              </div>
+
+              {/* Mode Switcher & View More Table Trigger */}
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5 bg-surface-light p-1.5 rounded-xl border border-border/50">
+                  <button
+                    onClick={() => setChartMode('area')}
+                    className={`p-2 rounded-lg transition-all cursor-pointer ${
+                      chartMode === 'area'
+                        ? 'bg-amber text-midnight shadow-md font-bold'
+                        : 'text-ivory-muted hover:text-ivory'
+                    }`}
+                    title="Spline Area View"
+                    aria-label="Area Chart View"
+                  >
+                    <AreaChartIcon size={16} />
+                  </button>
+                  <button
+                    onClick={() => setChartMode('bar')}
+                    className={`p-2 rounded-lg transition-all cursor-pointer ${
+                      chartMode === 'bar'
+                        ? 'bg-amber text-midnight shadow-md font-bold'
+                        : 'text-ivory-muted hover:text-ivory'
+                    }`}
+                    title="Stacked Column View"
+                    aria-label="Bar Chart View"
+                  >
+                    <BarChart2 size={16} />
+                  </button>
+                </div>
+              </div>
             </div>
 
-            {/* Mode Switcher & View More Table Trigger */}
-            <div className="flex items-center gap-2">
+            {/* Chart Canvas */}
+            <div className="h-72 sm:h-80 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                {chartMode === 'area' ? (
+                  <AreaChart data={monthlyData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="musicGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#a78bfa" stopOpacity={0.55} />
+                        <stop offset="95%" stopColor="#a78bfa" stopOpacity={0.0} />
+                      </linearGradient>
+                      <linearGradient id="bankingGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#5b8af5" stopOpacity={0.55} />
+                        <stop offset="95%" stopColor="#5b8af5" stopOpacity={0.0} />
+                      </linearGradient>
+                      <linearGradient id="householdGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#e8a849" stopOpacity={0.55} />
+                        <stop offset="95%" stopColor="#e8a849" stopOpacity={0.0} />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid stroke="#242430" strokeDasharray="3 3" vertical={false} opacity={0.6} />
+                    <XAxis
+                      dataKey="month"
+                      tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
+                      axisLine={{ stroke: '#2a2a35' }}
+                      tickLine={false}
+                    />
+                    <YAxis
+                      tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
+                      axisLine={false}
+                      tickLine={false}
+                    />
+                    <Tooltip content={<CustomChartTooltip />} />
+                    <Area
+                      type="monotone"
+                      dataKey="household"
+                      name="Household"
+                      stackId="1"
+                      stroke="#e8a849"
+                      strokeWidth={2.5}
+                      fill="url(#householdGrad)"
+                    />
+                    <Area
+                      type="monotone"
+                      dataKey="banking"
+                      name="Banking"
+                      stackId="1"
+                      stroke="#5b8af5"
+                      strokeWidth={2.5}
+                      fill="url(#bankingGrad)"
+                    />
+                    <Area
+                      type="monotone"
+                      dataKey="music"
+                      name="Music"
+                      stackId="1"
+                      stroke="#a78bfa"
+                      strokeWidth={2.5}
+                      fill="url(#musicGrad)"
+                    />
+                  </AreaChart>
+                ) : (
+                  <BarChart data={monthlyData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="musicBarGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#c4b5fd" />
+                        <stop offset="100%" stopColor="#8b5cf6" />
+                      </linearGradient>
+                      <linearGradient id="bankingBarGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#93c5fd" />
+                        <stop offset="100%" stopColor="#3b82f6" />
+                      </linearGradient>
+                      <linearGradient id="householdBarGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#fcd34d" />
+                        <stop offset="100%" stopColor="#d97706" />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid stroke="#242430" strokeDasharray="3 3" vertical={false} opacity={0.6} />
+                    <XAxis
+                      dataKey="month"
+                      tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
+                      axisLine={{ stroke: '#2a2a35' }}
+                      tickLine={false}
+                    />
+                    <YAxis
+                      tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
+                      axisLine={false}
+                      tickLine={false}
+                    />
+                    <Tooltip content={<CustomChartTooltip />} />
+                    <Bar dataKey="household" name="Household" stackId="a" fill="url(#householdBarGrad)" />
+                    <Bar dataKey="banking" name="Banking" stackId="a" fill="url(#bankingBarGrad)" />
+                    <Bar dataKey="music" name="Music" stackId="a" fill="url(#musicBarGrad)" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                )}
+              </ResponsiveContainer>
+            </div>
+
+            {/* Styled Legend & View More Trigger */}
+            <div className="flex flex-wrap items-center justify-between gap-4 mt-4 pt-4 border-t border-border/50 text-sm">
+              <div className="flex items-center gap-4 sm:gap-6">
+                {(['music', 'banking', 'household'] as LifeSource[]).map(src => (
+                  <span key={src} className="flex items-center gap-2 text-xs sm:text-sm text-ivory-muted font-medium">
+                    <span
+                      className="w-3 h-3 rounded-full shadow-xs"
+                      style={{ backgroundColor: SOURCE_COLORS[src].base }}
+                    />
+                    <span className="capitalize">{src}</span>
+                  </span>
+                ))}
+              </div>
+              <button
+                onClick={() => setShowMonthlyBreakdownModal(true)}
+                className="text-xs text-amber hover:text-amber-muted font-semibold flex items-center gap-1 cursor-pointer transition-colors"
+              >
+                <span>View Full Monthly Breakdown</span>
+                <ExternalLink size={12} />
+              </button>
+            </div>
+          </div>
+        </BorderGlow>
+
+
+        {/* Category Taxonomy & Distribution with BorderGlow */}
+        <BorderGlow
+          glowColor="215 90 75"
+          colors={['#5b8af5', '#3b82f6', '#93c5fd']}
+          borderRadius={20}
+          className="h-full"
+        >
+          <div className="bg-charcoal/90 backdrop-blur-md p-6 sm:p-8 flex flex-col justify-between h-full relative overflow-hidden">
+            <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue/5 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h3 className="text-base sm:text-xl font-semibold text-ivory flex items-center gap-2.5">
+                  <Layers size={18} className="text-blue" />
+                  Category Spectrum & Distribution
+                </h3>
+                <p className="text-xs sm:text-sm text-ivory-muted/70 mt-1">Top recurring themes & spend avenues</p>
+              </div>
+
               <div className="flex items-center gap-1.5 bg-surface-light p-1.5 rounded-xl border border-border/50">
                 <button
-                  onClick={() => setChartMode('area')}
+                  onClick={() => setCategoryView('chart')}
                   className={`p-2 rounded-lg transition-all cursor-pointer ${
-                    chartMode === 'area'
-                      ? 'bg-amber text-midnight shadow-md font-bold'
+                    categoryView === 'chart'
+                      ? 'bg-blue text-white shadow-md font-bold'
                       : 'text-ivory-muted hover:text-ivory'
                   }`}
-                  title="Spline Area View"
-                  aria-label="Area Chart View"
-                >
-                  <AreaChartIcon size={16} />
-                </button>
-                <button
-                  onClick={() => setChartMode('bar')}
-                  className={`p-2 rounded-lg transition-all cursor-pointer ${
-                    chartMode === 'bar'
-                      ? 'bg-amber text-midnight shadow-md font-bold'
-                      : 'text-ivory-muted hover:text-ivory'
-                  }`}
-                  title="Stacked Column View"
-                  aria-label="Bar Chart View"
+                  title="Bar Ranking"
+                  aria-label="Bar Ranking"
                 >
                   <BarChart2 size={16} />
                 </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Chart Canvas */}
-          <div className="h-72 sm:h-80 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              {chartMode === 'area' ? (
-                <AreaChart data={monthlyData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                  <defs>
-                    <linearGradient id="musicGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#a78bfa" stopOpacity={0.55} />
-                      <stop offset="95%" stopColor="#a78bfa" stopOpacity={0.0} />
-                    </linearGradient>
-                    <linearGradient id="bankingGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#5b8af5" stopOpacity={0.55} />
-                      <stop offset="95%" stopColor="#5b8af5" stopOpacity={0.0} />
-                    </linearGradient>
-                    <linearGradient id="householdGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#e8a849" stopOpacity={0.55} />
-                      <stop offset="95%" stopColor="#e8a849" stopOpacity={0.0} />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid stroke="#242430" strokeDasharray="3 3" vertical={false} opacity={0.6} />
-                  <XAxis
-                    dataKey="month"
-                    tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
-                    axisLine={{ stroke: '#2a2a35' }}
-                    tickLine={false}
-                  />
-                  <YAxis
-                    tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
-                    axisLine={false}
-                    tickLine={false}
-                  />
-                  <Tooltip content={<CustomChartTooltip />} />
-                  <Area
-                    type="monotone"
-                    dataKey="household"
-                    name="Household"
-                    stackId="1"
-                    stroke="#e8a849"
-                    strokeWidth={2.5}
-                    fill="url(#householdGrad)"
-                  />
-                  <Area
-                    type="monotone"
-                    dataKey="banking"
-                    name="Banking"
-                    stackId="1"
-                    stroke="#5b8af5"
-                    strokeWidth={2.5}
-                    fill="url(#bankingGrad)"
-                  />
-                  <Area
-                    type="monotone"
-                    dataKey="music"
-                    name="Music"
-                    stackId="1"
-                    stroke="#a78bfa"
-                    strokeWidth={2.5}
-                    fill="url(#musicGrad)"
-                  />
-                </AreaChart>
-              ) : (
-                <BarChart data={monthlyData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                  <defs>
-                    <linearGradient id="musicBarGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#c4b5fd" />
-                      <stop offset="100%" stopColor="#8b5cf6" />
-                    </linearGradient>
-                    <linearGradient id="bankingBarGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#93c5fd" />
-                      <stop offset="100%" stopColor="#3b82f6" />
-                    </linearGradient>
-                    <linearGradient id="householdBarGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#fcd34d" />
-                      <stop offset="100%" stopColor="#d97706" />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid stroke="#242430" strokeDasharray="3 3" vertical={false} opacity={0.6} />
-                  <XAxis
-                    dataKey="month"
-                    tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
-                    axisLine={{ stroke: '#2a2a35' }}
-                    tickLine={false}
-                  />
-                  <YAxis
-                    tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
-                    axisLine={false}
-                    tickLine={false}
-                  />
-                  <Tooltip content={<CustomChartTooltip />} />
-                  <Bar dataKey="household" name="Household" stackId="a" fill="url(#householdBarGrad)" />
-                  <Bar dataKey="banking" name="Banking" stackId="a" fill="url(#bankingBarGrad)" />
-                  <Bar dataKey="music" name="Music" stackId="a" fill="url(#musicBarGrad)" radius={[4, 4, 0, 0]} />
-                </BarChart>
-              )}
-            </ResponsiveContainer>
-          </div>
-
-          {/* Styled Legend & View More Trigger */}
-          <div className="flex flex-wrap items-center justify-between gap-4 mt-4 pt-4 border-t border-border/50 text-sm">
-            <div className="flex items-center gap-4 sm:gap-6">
-              {(['music', 'banking', 'household'] as LifeSource[]).map(src => (
-                <span key={src} className="flex items-center gap-2 text-xs sm:text-sm text-ivory-muted font-medium">
-                  <span
-                    className="w-3 h-3 rounded-full shadow-xs"
-                    style={{ backgroundColor: SOURCE_COLORS[src].base }}
-                  />
-                  <span className="capitalize">{src}</span>
-                </span>
-              ))}
-            </div>
-            <button
-              onClick={() => setShowMonthlyBreakdownModal(true)}
-              className="text-xs text-amber hover:text-amber-muted font-semibold flex items-center gap-1 cursor-pointer transition-colors"
-            >
-              <span>View Full Monthly Breakdown</span>
-              <ExternalLink size={12} />
-            </button>
-          </div>
-        </div>
-
-        {/* Category Taxonomy & Distribution */}
-        <div className="bg-charcoal/90 backdrop-blur-md border border-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden">
-          <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue/5 rounded-full blur-3xl pointer-events-none" />
-
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h3 className="text-base sm:text-xl font-semibold text-ivory flex items-center gap-2.5">
-                <Layers size={18} className="text-blue" />
-                Category Spectrum & Distribution
-              </h3>
-              <p className="text-xs sm:text-sm text-ivory-muted/70 mt-1">Top recurring themes & spend avenues</p>
-            </div>
-
-            <div className="flex items-center gap-1.5 bg-surface-light p-1.5 rounded-xl border border-border/50">
-              <button
-                onClick={() => setCategoryView('chart')}
-                className={`p-2 rounded-lg transition-all cursor-pointer ${
-                  categoryView === 'chart'
-                    ? 'bg-blue text-white shadow-md font-bold'
-                    : 'text-ivory-muted hover:text-ivory'
-                }`}
-                title="Bar Ranking"
-                aria-label="Bar Ranking"
-              >
-                <BarChart2 size={16} />
-              </button>
-              <button
-                onClick={() => setCategoryView('bars')}
-                className={`p-2 rounded-lg transition-all cursor-pointer ${
-                  categoryView === 'bars'
-                    ? 'bg-blue text-white shadow-md font-bold'
-                    : 'text-ivory-muted hover:text-ivory'
-                }`}
-                title="Detailed Spectrum"
-                aria-label="Spectrum Progress Bars"
-              >
-                <PieIcon size={16} />
-              </button>
-            </div>
-          </div>
-
-          {/* Category Visual with Expandable Height */}
-          <div className={`${showAllCategories ? 'h-96' : 'h-72 sm:h-80'} w-full flex items-center transition-all duration-300`}>
-            {categoryView === 'chart' ? (
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={displayedCategories}
-                  layout="vertical"
-                  margin={{ top: 5, right: 25, left: 15, bottom: 5 }}
+                <button
+                  onClick={() => setCategoryView('bars')}
+                  className={`p-2 rounded-lg transition-all cursor-pointer ${
+                    categoryView === 'bars'
+                      ? 'bg-blue text-white shadow-md font-bold'
+                      : 'text-ivory-muted hover:text-ivory'
+                  }`}
+                  title="Detailed Spectrum"
+                  aria-label="Spectrum Progress Bars"
                 >
-                  <defs>
-                    <linearGradient id="catBarGradAmber" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#d97706" />
-                      <stop offset="100%" stopColor="#fcd34d" />
-                    </linearGradient>
-                    <linearGradient id="catBarGradBlue" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#2563eb" />
-                      <stop offset="100%" stopColor="#60a5fa" />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid stroke="#242430" strokeDasharray="3 3" horizontal={false} opacity={0.5} />
-                  <XAxis
-                    type="number"
-                    tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
-                    axisLine={false}
-                    tickLine={false}
-                  />
-                  <YAxis
-                    type="category"
-                    dataKey="name"
-                    tick={{ fill: '#f5f0e8', fontSize: 11, fontWeight: 500 }}
-                    axisLine={false}
-                    tickLine={false}
-                    width={95}
-                  />
-                  <Tooltip
-                    formatter={(value: any, name: any, item: any) => [
-                      `${value} records (${item?.payload?.percentage}%)`,
-                      item?.payload?.fullName || name,
-                    ]}
-                    contentStyle={{
-                      backgroundColor: '#1a1a22',
-                      border: '1px solid #3a3a48',
-                      borderRadius: '12px',
-                      color: '#f5f0e8',
-                      fontSize: '13px',
-                      padding: '12px',
-                    }}
-                  />
-                  <Bar dataKey="count" name="Frequency" radius={[0, 8, 8, 0]}>
-                    {displayedCategories.map((_, idx) => (
-                      <Cell
-                        key={idx}
-                        fill={idx % 2 === 0 ? 'url(#catBarGradAmber)' : 'url(#catBarGradBlue)'}
-                      />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
-            ) : (
-              <div className="w-full space-y-3 overflow-y-auto max-h-88 pr-2">
-                {displayedCategories.map((cat, idx) => {
-                  const widthPct = (cat.count / maxCategoryCount) * 100;
-                  const isAmber = idx % 2 === 0;
-                  return (
-                    <div key={cat.fullName} className="space-y-1.5">
-                      <div className="flex justify-between text-sm sm:text-base">
-                        <span className="text-ivory font-medium truncate">{cat.fullName}</span>
-                        <span className="font-mono text-ivory-muted text-xs sm:text-sm shrink-0">
-                          {cat.count} records ({cat.percentage}%)
-                        </span>
-                      </div>
-                      <div className="h-2.5 bg-surface rounded-full overflow-hidden p-0.5 border border-border/40">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${widthPct}%` }}
-                          transition={{ duration: 0.6, delay: idx * 0.03 }}
-                          className={`h-full rounded-full ${
-                            isAmber
-                              ? 'bg-gradient-to-r from-amber-600 to-amber-400'
-                              : 'bg-gradient-to-r from-blue-600 to-blue-400'
-                          }`}
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
+                  <PieIcon size={16} />
+                </button>
               </div>
-            )}
-          </div>
+            </div>
 
-          {/* Footer note with View More Toggle */}
-          <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/50 text-xs sm:text-sm text-ivory-muted/70">
-            <span>Derived from merchant & playlist meta</span>
-            <button
-              onClick={() => setShowAllCategories(!showAllCategories)}
-              className="text-xs sm:text-sm text-blue hover:underline font-semibold flex items-center gap-1 cursor-pointer"
-            >
-              <span>{showAllCategories ? 'View Less' : `View More (${stats.topCategories.length})`}</span>
-              {showAllCategories ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
-            </button>
+            {/* Category Visual with Expandable Height */}
+            <div className={`${showAllCategories ? 'h-96' : 'h-72 sm:h-80'} w-full flex items-center transition-all duration-300`}>
+              {categoryView === 'chart' ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart
+                    data={displayedCategories}
+                    layout="vertical"
+                    margin={{ top: 5, right: 25, left: 15, bottom: 5 }}
+                  >
+                    <defs>
+                      <linearGradient id="catBarGradAmber" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stopColor="#d97706" />
+                        <stop offset="100%" stopColor="#fcd34d" />
+                      </linearGradient>
+                      <linearGradient id="catBarGradBlue" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stopColor="#2563eb" />
+                        <stop offset="100%" stopColor="#60a5fa" />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid stroke="#242430" strokeDasharray="3 3" horizontal={false} opacity={0.5} />
+                    <XAxis
+                      type="number"
+                      tick={{ fill: '#c8c0b4', fontSize: 11, fontFamily: 'monospace' }}
+                      axisLine={false}
+                      tickLine={false}
+                    />
+                    <YAxis
+                      type="category"
+                      dataKey="name"
+                      tick={{ fill: '#f5f0e8', fontSize: 11, fontWeight: 500 }}
+                      axisLine={false}
+                      tickLine={false}
+                      width={95}
+                    />
+                    <Tooltip
+                      formatter={(value: any, name: any, item: any) => [
+                        `${value} records (${item?.payload?.percentage}%)`,
+                        item?.payload?.fullName || name,
+                      ]}
+                      contentStyle={{
+                        backgroundColor: '#1a1a22',
+                        border: '1px solid #3a3a48',
+                        borderRadius: '12px',
+                        color: '#f5f0e8',
+                        fontSize: '13px',
+                        padding: '12px',
+                      }}
+                    />
+                    <Bar dataKey="count" name="Frequency" radius={[0, 8, 8, 0]}>
+                      {displayedCategories.map((_, idx) => (
+                        <Cell
+                          key={idx}
+                          fill={idx % 2 === 0 ? 'url(#catBarGradAmber)' : 'url(#catBarGradBlue)'}
+                        />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="w-full space-y-3 overflow-y-auto max-h-88 pr-2">
+                  {displayedCategories.map((cat, idx) => {
+                    const widthPct = (cat.count / maxCategoryCount) * 100;
+                    const isAmber = idx % 2 === 0;
+                    return (
+                      <div key={cat.fullName} className="space-y-1.5">
+                        <div className="flex justify-between text-sm sm:text-base">
+                          <span className="text-ivory font-medium truncate">{cat.fullName}</span>
+                          <span className="font-mono text-ivory-muted text-xs sm:text-sm shrink-0">
+                            {cat.count} records ({cat.percentage}%)
+                          </span>
+                        </div>
+                        <div className="h-2.5 bg-surface rounded-full overflow-hidden p-0.5 border border-border/40">
+                          <motion.div
+                            initial={{ width: 0 }}
+                            animate={{ width: `${widthPct}%` }}
+                            transition={{ duration: 0.6, delay: idx * 0.03 }}
+                            className={`h-full rounded-full ${
+                              isAmber
+                                ? 'bg-gradient-to-r from-amber-600 to-amber-400'
+                                : 'bg-gradient-to-r from-blue-600 to-blue-400'
+                            }`}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
+            {/* Footer note with View More Toggle */}
+            <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/50 text-xs sm:text-sm text-ivory-muted/70">
+              <span>Derived from merchant & playlist meta</span>
+              <button
+                onClick={() => setShowAllCategories(!showAllCategories)}
+                className="text-xs sm:text-sm text-blue hover:underline font-semibold flex items-center gap-1 cursor-pointer"
+              >
+                <span>{showAllCategories ? 'View Less' : `View More (${stats.topCategories.length})`}</span>
+                {showAllCategories ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+              </button>
+            </div>
           </div>
-        </div>
+        </BorderGlow>
       </div>
+
 
       {/* Top Artists & Bottom Graphs with View More Option */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

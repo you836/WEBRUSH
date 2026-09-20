@@ -1,4 +1,4 @@
-﻿.drift-wall {
+.drift-wall {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -7,33 +7,34 @@
   perspective: var(--dw-perspective, 1200px);
   user-select: none;
   background: transparent;
+  /* Ultra gentle boundary softening so all cards and edge pictures remain 100% visible */
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    black 12%,
-    black 88%,
+    black 3%,
+    black 97%,
     transparent 100%
   ),
   linear-gradient(
     to right,
     transparent 0%,
-    black 10%,
-    black 90%,
+    black 2%,
+    black 98%,
     transparent 100%
   );
   mask-composite: intersect;
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    black 12%,
-    black 88%,
+    black 3%,
+    black 97%,
     transparent 100%
   ),
   linear-gradient(
     to right,
     transparent 0%,
-    black 10%,
-    black 90%,
+    black 2%,
+    black 98%,
     transparent 100%
   );
   -webkit-mask-composite: source-in;

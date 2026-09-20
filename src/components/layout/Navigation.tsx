@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import { RubberSegment, type RubberSegmentItem } from '@/components/ui/RubberSegment';
 import type { ActiveSection } from '@/types';
 
 const NAV_ITEMS: { id: ActiveSection; label: string }[] = [
@@ -11,6 +12,11 @@ const NAV_ITEMS: { id: ActiveSection; label: string }[] = [
   { id: 'stories', label: 'Stories' },
   { id: 'journey', label: 'Journey' },
 ];
+
+const RUBBER_NAV_ITEMS: RubberSegmentItem[] = NAV_ITEMS.map(item => ({
+  value: item.id,
+  label: item.label
+}));
 
 interface NavigationProps {
   activeSection: ActiveSection;
@@ -53,22 +59,27 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
               <span>LIFE / RECEIPTS</span>
             </button>
 
-            {/* Desktop nav */}
-            <div className="hidden md:flex items-center gap-2">
-              {NAV_ITEMS.map(item => (
-                <button
-                  key={item.id}
-                  onClick={() => onNavigate(item.id)}
-                  className={`px-4 py-2 text-sm sm:text-base font-medium rounded-lg transition-all cursor-pointer ${
-                    activeSection === item.id
-                      ? 'text-ivory bg-surface-light shadow-xs border border-border/60'
-                      : 'text-ivory-muted hover:text-ivory hover:bg-surface'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+            {/* Desktop RubberSegment Nav */}
+            <div className="hidden md:flex items-center">
+              <RubberSegment
+                items={RUBBER_NAV_ITEMS}
+                value={activeSection !== 'hero' ? activeSection : undefined}
+                onChange={(val) => onNavigate(val as ActiveSection)}
+                trackColor="rgba(245, 240, 232, 0.07)"
+                thumbColor="#e8a849"
+                textColor="#a8a29e"
+                activeTextColor="#0a0806"
+                size="md"
+                radius={12}
+                stretch={110}
+                squash={4}
+                speed={1.1}
+                equalSlots={false}
+                draggable={true}
+                className="border border-border/50 shadow-inner"
+              />
             </div>
+
 
             {/* Mobile menu button */}
             <button

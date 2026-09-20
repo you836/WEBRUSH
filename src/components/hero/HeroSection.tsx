@@ -89,9 +89,8 @@ const ecosystemLogos: LogoItem[] = [
 export function HeroSection({ stats, onNavigate }: HeroSectionProps) {
   return (
     <div className="relative min-h-[95vh] w-full flex items-center justify-center overflow-hidden pt-20 pb-16 sm:pb-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-midnight via-charcoal/40 to-midnight pointer-events-none" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[340px] sm:w-[650px] md:w-[900px] h-[340px] sm:h-[650px] md:h-[900px] bg-amber/5 rounded-full blur-3xl pointer-events-none" />
+      {/* Subtle atmospheric ambient glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[340px] sm:w-[650px] md:w-[900px] h-[340px] sm:h-[650px] md:h-[900px] bg-amber/8 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 w-full text-center">
         <motion.p

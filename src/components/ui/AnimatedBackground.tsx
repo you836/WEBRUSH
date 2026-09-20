@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { motion } from 'motion/react';
+import { ModelViewer } from '@/components/ui/ModelViewer';
 
 interface Particle {
   x: number;
@@ -40,42 +40,23 @@ export function AnimatedBackground() {
     ];
 
     // Ambient floating particles
-    const particleCount = Math.min(Math.floor((width * height) / 30000), 45);
+    const particleCount = Math.min(Math.floor((width * height) / 45000), 16);
     const particles: Particle[] = [];
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        radius: Math.random() * 1.8 + 0.6,
-        vx: (Math.random() - 0.5) * 0.25,
-        vy: (Math.random() - 0.5) * 0.25,
-        alpha: Math.random() * 0.35 + 0.1,
+        radius: Math.random() * 1.2 + 0.3,
+        vx: (Math.random() - 0.5) * 0.08,
+        vy: (Math.random() - 0.5) * 0.08,
+        alpha: Math.random() * 0.12 + 0.03,
         color: colors[Math.floor(Math.random() * colors.length)],
       });
     }
 
     const render = () => {
       ctx.clearRect(0, 0, width, height);
-
-      // Draw faint connections between close particles
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-
-          if (dist < 130) {
-            const lineAlpha = (1 - dist / 130) * 0.08;
-            ctx.strokeStyle = `rgba(245, 240, 232, ${lineAlpha})`;
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
 
       // Draw particles
       for (const p of particles) {
@@ -105,66 +86,50 @@ export function AnimatedBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
-      {/* Dynamic drifting ambient glow spheres */}
-      <motion.div
-        animate={{
-          x: [0, 60, -40, 0],
-          y: [0, -50, 40, 0],
-          scale: [1, 1.15, 0.95, 1],
-          opacity: [0.15, 0.25, 0.18, 0.15],
-        }}
-        transition={{
-          duration: 22,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-        className="absolute -top-[15%] left-[10%] w-[35vw] h-[35vw] min-w-[300px] min-h-[300px] rounded-full bg-radial from-amber/25 via-amber/5 to-transparent blur-3xl"
-      />
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none" aria-hidden="true">
+      {/* 3D High-Res Interior Classroom */}
+      <div className="absolute inset-0 w-full h-full opacity-100 pointer-events-none">
+        <ModelViewer
+          url="/models/classroom.glb"
+          height="100vh"
+          width="100vw"
+          targetScale={4.6}
+          defaultZoom={1.7}
+          modelYOffset={-0.15}
+          defaultRotationX={-28}
+          defaultRotationY={18}
+          hideCeiling={true}
+          hideObstructingWalls={true}
+          swayMode={true}
+          autoRotateSpeed={0.3}
+          ambientIntensity={2.6}
+          keyLightIntensity={4.2}
+          fillLightIntensity={3.2}
+          rimLightIntensity={3.2}
+          environmentPreset="sunset"
+          enableHoverRotation={true}
+          enableMouseParallax={true}
+          className="w-full h-full"
+        />
+      </div>
 
-      <motion.div
-        animate={{
-          x: [0, -70, 50, 0],
-          y: [0, 60, -30, 0],
-          scale: [1, 1.2, 0.9, 1],
-          opacity: [0.12, 0.22, 0.15, 0.12],
-        }}
-        transition={{
-          duration: 26,
-          repeat: Infinity,
-          ease: 'easeInOut',
-          delay: 2,
-        }}
-        className="absolute top-[40%] -right-[10%] w-[40vw] h-[40vw] min-w-[320px] min-h-[320px] rounded-full bg-radial from-blue/20 via-blue/5 to-transparent blur-3xl"
-      />
-
-      <motion.div
-        animate={{
-          x: [0, 50, -60, 0],
-          y: [0, -40, 50, 0],
-          scale: [1, 1.1, 0.95, 1],
-          opacity: [0.1, 0.18, 0.12, 0.1],
-        }}
-        transition={{
-          duration: 30,
-          repeat: Infinity,
-          ease: 'easeInOut',
-          delay: 5,
-        }}
-        className="absolute bottom-[10%] left-[20%] w-[38vw] h-[38vw] min-w-[280px] min-h-[280px] rounded-full bg-radial from-music/18 via-music/5 to-transparent blur-3xl"
-      />
+      {/* Refined Low-Blur Dark Overlay for Whole Site */}
+      <div className="absolute inset-0 bg-[#080706]/35 backdrop-blur-[5px] pointer-events-none" />
+      <div className="absolute inset-0 bg-radial from-transparent via-[#080706]/20 to-[#080706]/65 pointer-events-none" />
 
       {/* Subtle geometric dot grid pattern */}
       <div
-        className="absolute inset-0 opacity-[0.035]"
+        className="absolute inset-0 opacity-[0.02] pointer-events-none"
         style={{
-          backgroundImage: `radial-gradient(rgba(245, 240, 232, 0.6) 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(rgba(245, 240, 232, 0.4) 1px, transparent 1px)`,
           backgroundSize: '32px 32px',
         }}
       />
 
-      {/* Interactive Constellation / Particle Canvas */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-70" />
+      {/* Subtle ambient canvas layer */}
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" />
     </div>
   );
 }
+
+export default AnimatedBackground;

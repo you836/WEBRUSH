@@ -1,4 +1,4 @@
-﻿import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import './DriftWall.css';
 
 export interface DriftWallItem {
@@ -112,7 +112,8 @@ export const DriftWall = ({
     const unit = tileHeight + gap;
     return columnItems.map(col => {
       const copyHeight = Math.max(unit, col.length * unit);
-      const copies = Math.max(2, Math.ceil((containerHeight * 1.6) / copyHeight) + 1);
+      // Ensure plenty of headroom so no tile is ever missing or clipped during continuous drift
+      const copies = Math.max(4, Math.ceil((containerHeight * 2.8) / copyHeight) + 3);
       return { copyHeight, copies };
     });
   }, [columnItems, tileHeight, gap, containerHeight]);
@@ -258,14 +259,37 @@ export const DriftWall = ({
   );
 
   const renderTile = (item: DriftWallItem, id: string, colIndex: number) => {
+    const fallbackSrc = 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&auto=format&fit=crop&q=80';
     const inner = (
       <span className="drift-wall__inner">
-        <img src={item.image} alt={item.title ?? ''} loading="lazy" decoding="async" draggable={false} />
+        <img
+          src={item.image}
+          alt={item.title ?? 'Memory receipt'}
+          loading="lazy"
+          decoding="async"
+          draggable={false}
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (target.src !== fallbackSrc) {
+              target.src = fallbackSrc;
+            }
+          }}
+        />
+        {item.category && (
+          <span className="absolute top-2 left-2 px-2 py-0.5 rounded-md text-[10px] font-mono uppercase tracking-wider bg-black/60 text-[#e8a849] backdrop-blur-md border border-white/10 z-10 pointer-events-none">
+            {item.category}
+          </span>
+        )}
+        {item.title && (
+          <span className="absolute bottom-0 inset-x-0 p-2.5 bg-gradient-to-t from-black/90 via-black/50 to-transparent text-[11px] font-medium text-white line-clamp-1 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none">
+            {item.title}
+          </span>
+        )}
         <span className="drift-wall__overlay" aria-hidden="true" />
       </span>
     );
     const commonProps = {
-      className: `drift-wall__tile${activeId === id ? ' is-active' : ''}`,
+      className: `drift-wall__tile group${activeId === id ? ' is-active' : ''}`,
       'data-tile-id': id,
       'data-col': colIndex,
       onFocus: () => activate(id, colIndex),
